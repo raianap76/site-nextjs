@@ -1,4 +1,4 @@
-import Meta from '../components/Meta';
+import Meta from '../components/meta';
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 import Image from 'next/image';
