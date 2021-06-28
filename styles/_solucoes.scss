@@ -630,6 +630,16 @@
       letter-spacing: 0px;
       color: #5467ae;
     }
+    &-paragraph-construcao {
+      max-width: 972px;
+      text-align: left;
+      font-size: 1.6rem;
+      line-height: 2.5rem;
+      font-style: normal;
+      font-weight: normal;
+      letter-spacing: 0px;
+      color: #5467ae;
+    }
   }
   &__orcamentoModal {
     margin-right: -6rem;
@@ -669,7 +679,8 @@
     background-image: url('../assets/modal-construcao-2.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
+    margin-left: -2rem;
   }
   &__closeModal {
     position: absolute;

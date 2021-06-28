@@ -472,14 +472,14 @@ const solucoes = () => {
                 Sistema para Construção Civil
               </h2>
             </div>
-            <p className="solucoes__modal__cardHeader-paragraph">
+            <p className="solucoes__modal__cardHeader-paragraph-construcao ">
               Este sistema consolida todas as informações do crédito
               imobiliário/associativo para facilitar a leitura e o entendimento
               dos arquivos enviados pela CAIXA. Com isso, auxiliamos a sua
               equipe no gerenciamento de dados, a fim de otimizar os processos
               da sua obra.
             </p>
-            <p className="solucoes__modal__cardHeader-paragraph">
+            <p className="solucoes__modal__cardHeader-paragraph-construcao ">
               O banco de dados gerado pela VP6 é facilmente integrável ao ERP da
               sua empresa para que você tenha:
             </p>
