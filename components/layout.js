@@ -1,5 +1,5 @@
-import Nav from './Nav';
-import Meta from './Meta';
+import Nav from './nav';
+import Meta from './meta';
 import Footer from './Footer';
 
 const Layout = ({ children }) => {
