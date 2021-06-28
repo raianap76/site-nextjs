@@ -1,0 +1,29 @@
+@import "./fonts";
+@import "./nav";
+@import "./home";
+@import "./footer";
+@import "./layout";
+@import "./about";
+@import "./tecnologia";
+@import "./contato";
+@import "./solucoes";
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+}
+
+a {
+
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}

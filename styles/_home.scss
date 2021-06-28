@@ -1,0 +1,622 @@
+.hero-home {
+  height: 700px;
+  background-image: url('../assets/herohome.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  &__content-header {
+    padding-top: 9rem;
+    text-align: left;
+    font-family: 'IBM Plex Sans';
+    color: #f7f7f7;
+  }
+
+  &__text-box {
+    font-size: 6.2rem;
+    line-height: 68px;
+    width: 519px;
+    height: 149px;
+
+    letter-spacing: 0px;
+    opacity: 1;
+
+    font-weight: bold;
+    font-style: normal;
+  }
+  &__text-box-2 {
+    font-size: 3rem;
+    line-height: 4.2rem;
+    width: 419px;
+    height: 89px;
+
+    letter-spacing: 0px;
+    opacity: 1;
+
+    font-weight: bold;
+    font-style: normal;
+  }
+  &__paragraph {
+    width: 503px;
+    height: 51px;
+    margin-top: 2.5rem;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #f7f7f7;
+    opacity: 1;
+
+    &-text {
+      font-size: 1.8rem;
+      line-height: 30px;
+      letter-spacing: 0px;
+      font-weight: normal;
+      font-style: normal;
+    }
+    &-text-2 {
+    }
+  }
+  &__button-faleConosco {
+    margin-top: 20px;
+    color: #ffffff;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    line-height: 4.2rem;
+    width: 205px;
+    height: 50px;
+    background: #4ebbc5 0% 0% no-repeat padding-box;
+    border: 1px solid #4ebbc5;
+    border-radius: 5px;
+    opacity: 1;
+    font-family: 'IBM Plex Sans medium';
+    &:hover {
+      background-color: #104288;
+      transform: translateX(0.5rem) scaleX(1.03);
+      box-shadow: 0 1rem 2rem rgba(#161616, 0.2);
+      transition-duration: 0.5s;
+    }
+  }
+}
+
+.dobra-2 {
+  @media (min-width: 1200px) {
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+      max-width: 1200px !important;
+    }
+  }
+  padding-top: 9rem;
+  padding-bottom: 8rem;
+  font-family: 'IBM Plex Sans';
+  background: #a6aed819 0% 0% no-repeat padding-box;
+  &__title {
+    color: #0157a5;
+    line-height: 4.8rem;
+    font-size: 3.2rem;
+    font-weight: bold;
+    font-style: normal;
+  }
+  &__paragraph {
+    margin: 0 auto;
+    width: 691px;
+    height: 45px;
+
+    &-text {
+      letter-spacing: 0px;
+      color: #5467ae;
+      opacity: 1;
+      font-size: 1.6rem;
+      line-height: 2.5rem;
+      font-weight: normal;
+      font-style: normal;
+    }
+  }
+
+  &__cards {
+    font-family: 'IBM Plex Sans';
+    width: 280px;
+    height: 342px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 5px 20px #1037861a;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 2rem;
+
+    &-head {
+      float: left;
+      &-simbol {
+        margin-top: 0.5rem;
+        margin-right: 0.6rem;
+        float: left;
+        width: 16px;
+        height: 16px;
+        background-image: url('../assets/seta2.PNG');
+        background-size: cover;
+        background-position: center;
+      }
+
+      &-title {
+        float: left;
+        width: 150px;
+        height: 55px;
+        font-size: 2.2rem;
+        line-height: 2.6rem;
+        font-weight: bold;
+        font-style: normal;
+        letter-spacing: 0px;
+        color: #5467ae;
+      }
+    }
+
+    &-text {
+      width: 240px;
+      height: 227px;
+      padding-top: 2rem;
+      font-family: 'IBM Plex Sans';
+      text-align: left;
+      font-size: 1.6rem;
+      line-height: 2.3rem;
+      font-weight: normal;
+      font-style: normal;
+      letter-spacing: 0px;
+      color: #5467ae;
+
+      clear: both;
+    }
+  }
+
+  &__aligncenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__button {
+    margin-top: 5rem;
+    color: #ffffff;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    line-height: 4.2rem;
+    width: 205px;
+    height: 50px;
+    background: #4ebbc5 0% 0% no-repeat padding-box;
+    border: 1px solid #4ebbc5;
+    border-radius: 5px;
+    opacity: 1;
+    font-family: 'IBM Plex Sans medium';
+    &:hover {
+      background-color: #104288;
+      transform: translateX(0.5rem) scaleX(1.03);
+      box-shadow: 0 1rem 2rem rgba(#161616, 0.2);
+      transition-duration: 0.5s;
+    }
+  }
+}
+
+.dobra-3 {
+  padding-top: 9rem;
+  padding-bottom: 8rem;
+  font-family: 'IBM Plex Sans';
+  background: #ffffff 0% 0% no-repeat padding-box;
+
+  &__title {
+    text-align: center;
+    color: #0157a5;
+    line-height: 4.8rem;
+    font-size: 3.2rem;
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: 1.5rem;
+  }
+  &__paragraph {
+    text-align: center;
+    letter-spacing: 0px;
+    color: #5467ae;
+    opacity: 1;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    font-weight: normal;
+    font-style: normal;
+    margin-bottom: 4rem;
+  }
+
+  &__painel {
+    width: 740px;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+    &-itensCenter {
+      margin: 0 auto;
+      display: flex;
+      flex: wrap;
+    }
+  }
+}
+
+.dobra-4 {
+  position: relative;
+  margin-top: 8rem;
+
+  &__title {
+    padding-top: 8rem;
+    text-align: left;
+    font-family: 'IBM Plex Sans';
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0px;
+    color: #f7f7f7;
+  }
+  &__paragraph {
+    width: 557px;
+    height: 20px;
+    text-align: left;
+    font-family: 'IBM Plex Sans';
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 0px;
+    color: #f7f7f7;
+    margin-bottom: 8rem;
+  }
+  &__solucoes {
+    width: 470px;
+    height: 60px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 6px #03297633;
+    border-radius: 5px;
+    padding: 1rem;
+
+    &-empr {
+      float: left;
+      width: 42px;
+      height: 42px;
+      margin-right: 1.5rem;
+      background: transparent url('../assets/orçamento-empresaria.svg') 0% 0%
+        no-repeat padding-box;
+    }
+    &-civil {
+      float: left;
+      width: 42px;
+      height: 42px;
+      margin-right: 1.5rem;
+      background: transparent url('../assets/sistema-construcao-civil.svg') 0%
+        0% no-repeat padding-box;
+    }
+    &-gerencial {
+      float: left;
+      width: 42px;
+      height: 42px;
+      margin-right: 1.5rem;
+      background: transparent url('../assets/sistema-informação-gerencial.svg')
+        0% 0% no-repeat padding-box;
+    }
+    &-relatorio {
+      float: left;
+      width: 42px;
+      height: 42px;
+      margin-right: 1.5rem;
+      background: transparent url('../assets/automatizacao-relatorio.svg') 0% 0%
+        no-repeat padding-box;
+    }
+    &-cobranca {
+      float: left;
+      width: 42px;
+      height: 42px;
+      margin-right: 1.5rem;
+      background: transparent url('../assets/gestao-setor-cobranca.svg') 0% 0%
+        no-repeat padding-box;
+    }
+
+    &-conciliacao {
+      float: left;
+      width: 42px;
+      height: 42px;
+      margin-right: 1.5rem;
+      background: transparent url('../assets/conciliacaobancaria.svg') 0% 0%
+        no-repeat padding-box;
+    }
+
+    &-p {
+      float: left;
+      margin-top: 0.5rem;
+      text-align: left;
+      font-family: 'IBM Plex Sans medium';
+      font-size: 2.2rem;
+      line-height: 2.8rem;
+      font-weight: normal;
+      letter-spacing: 0px;
+      color: #5467ae;
+    }
+  }
+  &__button {
+    margin-top: 5rem;
+    color: #ffffff;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    line-height: 4.2rem;
+    width: 205px;
+    height: 50px;
+    background: #4ebbc5 0% 0% no-repeat;
+    border: 1px solid #4ebbc5;
+    border-radius: 5px;
+    opacity: 1;
+    font-family: 'IBM Plex Sans medium';
+    &:hover {
+      background-color: #104288;
+      transform: translateX(0.5rem) scaleX(1.03);
+      box-shadow: 0 1rem 2rem rgba(#161616, 0.2);
+      transition-duration: 0.5s;
+    }
+  }
+
+  &__bg {
+    width: 100%;
+    height: 967px;
+    background: #5467ae 0% 0% no-repeat padding-box;
+
+    &-image {
+      position: absolute;
+      top: 0;
+      right: 0px;
+      width: 45%;
+      height: 967px;
+      background: url('../assets/man.png') no-repeat center center;
+      background-size: cover;
+    }
+  }
+}
+.dobra-5 {
+  margin-top: 3rem;
+  height: 617px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  &__clientes {
+    width: 330px;
+    margin-right: 6rem;
+
+    &-title {
+      text-align: left;
+      font-family: 'IBM Plex Sans';
+      font-size: 3.2rem;
+      line-height: 4.8rem;
+      font-weight: bold;
+      font-style: normal;
+      letter-spacing: 0px;
+      color: #0157a5;
+    }
+    &-paragraph {
+      text-align: left;
+      font-family: 'IBM Plex Sans';
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      font-weight: normal;
+      font-style: normal;
+      letter-spacing: 0px;
+      color: #0157a5;
+      margin-bottom: 8rem;
+    }
+  }
+  &__painel {
+    width: 823px;
+    height: 429px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &-AppPonto {
+      width: 175px;
+      height: 41px;
+      background-image: url('../assets/Apponto.png');
+      background-size: cover;
+      background-position: center;
+      margin-right: 3.5rem;
+    }
+    &-Inter {
+      width: 155px;
+      height: 155px;
+      background-image: url('../assets/Banco Inter.png');
+      background-size: cover;
+      background-position: top;
+      margin-right: 3.5rem;
+      margin-top: -60px;
+    }
+    &-Carapreta {
+      width: 175px;
+      height: 45px;
+      background-image: url('../assets/Cara Preta.png');
+      background-size: cover;
+      background-position: center;
+      margin-right: 3.5rem;
+    }
+    &-Cea {
+      width: 145px;
+      height: 145px;
+      background-image: url('../assets/Construtora C&A.png');
+      background-size: cover;
+      background-position: center;
+
+      margin-top: -60px;
+    }
+    &-Cyrela {
+      width: 175px;
+      height: 100px;
+      background-image: url('../assets/Cyrela.png');
+      background-size: cover;
+      background-position: center;
+      margin-right: 3.5rem;
+      margin-top: -4rem;
+    }
+
+    &-Direional {
+      width: 175px;
+      height: 22px;
+      background-image: url('../assets/direcional_rgb.png');
+      background-size: cover;
+      background-position: center;
+      margin-right: 3.5rem;
+    }
+    &-Fricasa {
+      width: 131px;
+      height: 56px;
+      background-image: url('../assets/Fricasa.png');
+      background-size: cover;
+      background-position: center;
+      margin-right: 3.5rem;
+      margin-top: -1rem;
+    }
+    &-Indigo {
+      width: 164px;
+      height: 54px;
+      background-image: url('../assets/INDIGO.png');
+      background-size: cover;
+      background-position: center;
+      margin-top: -1rem;
+    }
+    &-JcContijo {
+      width: 140px;
+      height: 93px;
+      background-image: url('../assets/JC Gontijo.png');
+      background-size: cover;
+      background-position: center;
+      margin-right: 5.5rem;
+      margin-top: -2.5rem;
+    }
+    &-Mrv {
+      width: 141px;
+      height: 39px;
+      background-image: url('../assets/MRV.png');
+      background-size: cover;
+      background-position: center;
+
+      margin-right: 5.5rem;
+    }
+    &-Patrimar {
+      width: 174px;
+      height: 46px;
+      background-image: url('../assets/Patrimar.png');
+      background-size: cover;
+      background-position: center;
+
+      margin-right: 5.5rem;
+    }
+    &-Pif-Paf {
+      width: 110px;
+      height: 70px;
+      background-image: url('../assets/PifPaf.png');
+      background-size: cover;
+      background-position: center;
+      margin-top: -1rem;
+    }
+    &-Plano {
+      width: 190px;
+      height: 51px;
+      background-image: url('../assets/Plano&Plano.png');
+      background-size: cover;
+      background-position: center;
+      margin-right: 3.5rem;
+    }
+    &-Plena {
+      width: 140px;
+      height: 82px;
+      background-image: url('../assets/Plena Alimentos.png');
+      background-size: cover;
+      background-position: center;
+      margin-right: 3.5rem;
+      margin-top: -2.5rem;
+    }
+
+    &-Precon {
+      width: 171px;
+      height: 57px;
+      background-image: url('../assets/Precon.png');
+      background-size: cover;
+      background-position: center;
+      margin-top: -1.5rem;
+      margin-right: 3.5rem;
+    }
+
+    &-Tial {
+      width: 119px;
+      height: 51px;
+      background-image: url('../assets/Tial.png');
+      background-size: cover;
+      background-position: center;
+      margin-top: -1.5rem;
+    }
+  }
+}
+
+.dobra-cta {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__bg {
+    width: 100%;
+    height: 451px;
+    background: transparent url('../assets/dobra-cta.png') 0% 0% no-repeat;
+    background-size: cover;
+
+
+  }
+
+  &__content{
+    padding-top: 10rem;
+    width: 554px;
+    height: 62px;
+    margin: 0 auto;
+  }
+  &__title{
+
+    text-align: center;
+    font-family: 'IBM Plex Sans';
+    font-size: 4.2rem;
+    line-height: 4.8rem;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+  }
+  &__paragraph{
+
+    text-align: center;
+    font-family: 'IBM Plex Sans';
+    font-size: 2.2rem;
+    line-height: 3.3rem;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+  }
+
+  &__button{
+    margin-top: 4rem;
+    width: 280px;
+    height: 50px;
+    text-align: center;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    opacity: 1;
+    font-family: 'IBM Plex Sans medium';
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    line-height: 4.2rem;
+    color: #5467AE;
+  }
+
+
+}

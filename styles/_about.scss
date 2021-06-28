@@ -1,0 +1,195 @@
+.about-page {
+  font-family: 'IBM Plex Sans';
+  color: #ffffff;
+  &__bg {
+    height: 600px;
+    background-image: url('../assets/bg-hero.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  &__content {
+    width: 798px;
+    margin: 0 auto;
+  }
+  &__header {
+    padding-top: 19rem;
+    text-align: center;
+    font-size: 4.2rem;
+    line-height: 4.8rem;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0px;
+  }
+  &__paragraph {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 0px;
+  }
+  &__button {
+    margin-top: 4rem;
+    width: 205px;
+    height: 50px;
+    text-align: center;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    opacity: 1;
+    font-family: 'IBM Plex Sans medium';
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    line-height: 4.2rem;
+    color: #5467ae;
+  }
+
+  &__dobra-1 {
+    padding-top: 8rem;
+    width: 100%;
+    padding-bottom: 8rem;
+    background: #f6f7fb 0% 0% no-repeat padding-box;
+    font-family: 'IBM Plex Sans';
+    color: #0157a5;
+
+    &__col-1 {
+      width: 434px;
+      margin-right: 8rem;
+      h2 {
+        text-align: left;
+        font-size: 3.2rem;
+        line-height: 4.8rem;
+        font-weight: bold;
+        font-style: normal;
+        letter-spacing: 0px;
+      }
+      p {
+        padding-top: 1rem;
+        text-align: left;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        font-weight: normal;
+        font-style: normal;
+        letter-spacing: 0px;
+      }
+    }
+
+    &__col-2 {
+      width: 620px;
+      height: 240px;
+      background: #ffffff;
+      box-shadow: 0px 5px 20px #1037861a;
+      border-radius: 5px;
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+      opacity: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: left;
+
+      &-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        button {
+          width: 219px;
+          height: 80px;
+          text-align: center;
+          background: #a6aed826 0% 0% no-repeat padding-box;
+          border: none;
+          border-radius: 1px;
+          font-family: 'IBM Plex Sans';
+          font-weight: bold;
+          font-style: normal;
+          letter-spacing: 0px;
+          font-size: 2.2rem;
+          line-height: 2.6rem;
+          color: #a6aed8;
+          margin-bottom: 1px;
+        }
+        &-active {
+          background: #ffffff 0% no-repeat padding-box !important;
+          color: #5467ae !important;
+        }
+      }
+      &-paragraph {
+        width: 342px;
+        height: 146px;
+        margin-top: 2rem;
+        margin-left: 2rem;
+        font-family: 'IBM Plex Sans';
+        font-weight: normal;
+        font-style: normal;
+        letter-spacing: 0px;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        color: #5467ae;
+      }
+      &-none {
+        display: none;
+      }
+    }
+  }
+
+  .dobra-trabalhe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:2rem;
+    &__bg {
+      width: 100%;
+      height: 491px;
+      background: transparent url('../assets/dobra-trabalhe.png') 0% 0%
+        no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    &__content {
+      padding-top: 9rem;
+      width: 554px;
+      height: 62px;
+      margin: 0 auto;
+    }
+    &__title {
+      text-align: center;
+      font-family: 'IBM Plex Sans';
+      font-size: 4.2rem;
+      line-height: 4.8rem;
+      font-weight: bold;
+      font-style: normal;
+      letter-spacing: 0px;
+      color: #ffffff;
+    }
+    &__paragraph {
+      text-align: center;
+      font-family: 'IBM Plex Sans';
+      font-size: 2.2rem;
+      line-height: 3.3rem;
+      font-weight: normal;
+      font-style: normal;
+      letter-spacing: 0px;
+      color: #ffffff;
+    }
+
+    &__button {
+      margin-top: 4rem;
+      width: 240px;
+      height: 50px;
+      text-align: center;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border: 1px solid #ffffff;
+      border-radius: 5px;
+      opacity: 1;
+      font-family: 'IBM Plex Sans medium';
+      letter-spacing: 0px;
+      text-transform: uppercase;
+      font-size: 1.8rem;
+      line-height: 4.2rem;
+      color: #5467ae;
+    }
+  }
+}

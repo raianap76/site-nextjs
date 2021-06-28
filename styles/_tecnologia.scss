@@ -1,0 +1,207 @@
+.tec-page {
+  font-family: 'IBM Plex Sans';
+  color: #ffffff;
+  &__bg {
+    width: 100%;
+    height: 640px;
+    background-image: url('../assets/bg-tec.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  &__content {
+    width: 798px;
+    margin: 0 auto;
+  }
+  &__content-2 {
+    width: 620px;
+    margin: 0 auto;
+  }
+  &__header {
+    width: 798px;
+    padding-top: 15rem;
+    text-align: center;
+    font-size: 4.2rem;
+    line-height: 4.8rem;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0px;
+  }
+  &__paragraph {
+    width: 620px;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 0px;
+  }
+  &__button {
+    margin-top: 4rem;
+    width: 205px;
+    height: 50px;
+    text-align: center;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    opacity: 1;
+    font-family: 'IBM Plex Sans medium';
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    line-height: 4.2rem;
+    color: #5467ae;
+  }
+
+  &__dobra-3 {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    font-family: 'IBM Plex Sans';
+    background: #f7f7f7 0% 0% no-repeat padding-box;
+
+    &__title {
+      text-align: center;
+      color: #0157a5;
+      line-height: 4.8rem;
+      font-size: 3.2rem;
+      font-weight: bold;
+      font-style: normal;
+      margin-bottom: 1.5rem;
+    }
+    &__paragraph {
+      width: 791px;
+      text-align: center;
+      letter-spacing: 0px;
+      color: #5467ae;
+      opacity: 1;
+      font-size: 1.6rem;
+      line-height: 2.5rem;
+      font-weight: normal;
+      font-style: normal;
+      margin-bottom: 7rem;
+    }
+
+    &__painel {
+      width: 990px;
+
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+
+      &-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 210px;
+        height: 254px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border: 1px solid #7ab1e033;
+        border-radius: 10px;
+        opacity: 1;
+        margin-right: 3rem;
+        margin-bottom: 2rem;
+
+        p {
+          margin-top: 1.5rem;
+          text-align: center;
+          color: #7ab1e0;
+          line-height: 2.2rem;
+          font-size: 2.8rem;
+          font-family: 'IBM Plex Sans medium';
+        }
+      }
+
+      &-itensCenter {
+        margin: 0 auto;
+        display: flex;
+        flex: wrap;
+      }
+
+      &-logoPython {
+        width: 150px;
+        height: 150px;
+        background-image: url('../assets/python.png');
+        background-size: cover;
+        background-position: center;
+      }
+
+      &-logoNode {
+        width: 150px;
+        height: 150px;
+        background-image: url('../assets/node.png');
+        background-size: cover;
+        background-position: center;
+      }
+      &-logoSql {
+        width: 150px;
+        height: 150px;
+        background-image: url('../assets/sql.png');
+        background-size: cover;
+        background-position: center;
+      }
+      &-logoAws {
+        width: 150px;
+        height: 150px;
+        background-image: url('../assets/aws.png');
+        background-size: cover;
+        background-position: center;
+      }
+      &-logoReact {
+        width: 150px;
+        height: 150px;
+        background-image: url('../assets/react.png');
+        background-size: cover;
+        background-position: center;
+      }
+      &-logoAngular {
+        width: 150px;
+        height: 150px;
+        background-image: url('../assets/angular.png');
+        background-size: cover;
+        background-position: center;
+      }
+      &-logoPanda {
+        width: 150px;
+        height: 150px;
+        background-image: url('../assets/panda.png');
+        background-size: cover;
+        background-position: center;
+      }
+      &-logoMysql {
+        width: 150px;
+        height: 150px;
+        background-image: url('../assets/mysql.png');
+        background-size: cover;
+        background-position: center;
+      }
+      &-logoPostgres {
+        width: 150px;
+        height: 150px;
+        background-image: url('../assets/postgres.png');
+        background-size: cover;
+        background-position: center;
+      }
+      &-logoAzure {
+        width: 150px;
+        height: 150px;
+        background-image: url('../assets/azure.png');
+        background-size: cover;
+        background-position: center;
+      }
+      &-logoDigitalOCean {
+        width: 150px;
+        height: 150px;
+        background-image: url('../assets/digital-ocean.png');
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+  &__content-cta {
+    padding-top: 12rem;
+    width: 829px;
+    margin: 0 auto;
+  }
+}

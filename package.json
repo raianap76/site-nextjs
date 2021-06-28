@@ -1,0 +1,20 @@
+{
+  "name": "site-vp6",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "bootstrap": "^5.0.0-beta3",
+    "next": "11.0.0",
+    "next-images": "^1.8.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-modal": "^3.14.3",
+    "sass": "^1.35.1"
+  }
+}

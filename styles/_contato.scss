@@ -1,0 +1,296 @@
+.contato-page {
+  font-family: 'IBM Plex Sans';
+
+  &__bg {
+    padding-top: 15rem;
+    width: 100%;
+    padding-bottom: 9rem;
+    background: #103786 0% 0% no-repeat padding-box;
+    color: #f7f7f7;
+    position: relative;
+  }
+
+  &__mascara {
+    width: 802px;
+    height: 1467px;
+    background-image: url('../assets/page-contato-bg.svg');
+    background-size: 70% 80%;
+    background-position: top right;
+    background-repeat: no-repeat;
+    z-index: 9999;
+    position: absolute;
+    top: 15rem;
+    right: 0;
+
+    @media (min-width: 1400px) {
+      background-size: cover;
+    }
+  }
+
+  &__header {
+    font-size: 4.2rem;
+    line-height: 4.8rem;
+    text-align: left;
+    letter-spacing: 0px;
+    font-weight: bold;
+    font-style: normal;
+  }
+  &__paragraph {
+    margin-top: 2rem;
+    width: 542px;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    text-align: left;
+    letter-spacing: 0px;
+    font-weight: normal;
+    font-style: normal;
+  }
+  &__header-2 {
+    margin-top: 8rem;
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+    text-align: left;
+    letter-spacing: 0px;
+    font-weight: bold;
+    font-style: normal;
+    color: #f088b6;
+  }
+
+  &__etapas {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+
+    &-image {
+      width: 77px;
+      height: 494px;
+      background-image: url('../assets/etapas-max.PNG');
+      background-size: cover;
+      background-position: center;
+    }
+
+    &-paragraph {
+      width: 582px;
+      text-align: left;
+      color: #f7f7f7;
+      line-height: 2.8rem;
+      font-size: 1.8rem;
+      font-weight: normal;
+      font-style: normal;
+      margin-top: 6rem;
+      padding-left: 1rem;
+      letter-spacing: 0px;
+    }
+    &-paragraph-2 {
+      width: 582px;
+      text-align: left;
+      color: #3774b7;
+      line-height: 2.8rem;
+      font-size: 1.8rem;
+      font-weight: normal;
+      font-style: normal;
+      margin-top: 11.8rem;
+      padding-left: 1rem;
+      letter-spacing: 0px;
+    }
+    &-row {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__form {
+    padding-top: 10rem;
+    width: 100%;
+    height: 885px;
+    background: #f6f7fb 0% 0% no-repeat padding-box;
+
+    &-header {
+      text-align: left;
+      color: #0157a5;
+      font-size: 3.2rem;
+      line-height: 4.8rem;
+      font-weight: bold;
+      font-style: normal;
+      letter-spacing: 0px;
+    }
+    &-paragraph {
+      text-align: left;
+      color: #5467ae;
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+      font-weight: normal;
+      font-style: normal;
+      letter-spacing: 0px;
+      margin-top: 1rem;
+    }
+    &-contatos {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+    }
+    &-geral {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      margin-right: 4rem;
+      margin-top: 2.5rem;
+
+      &-image {
+        margin-right: 0.5rem;
+        width: 32px;
+        height: 21px;
+        background-image: url('../assets/icon-mail-c.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 1.2rem;
+      }
+      &-text {
+        text-align: left;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        font-style: normal;
+        font-weight: normal;
+        letter-spacing: 0px;
+        color: #5467ae;
+      }
+
+      &__phone {
+        margin-right: 1rem;
+        width: 30px;
+        height: 30px;
+        background-image: url('../assets/icon-phone-c.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+  form#formset {
+    text-align: left;
+  }
+  form#formset fieldset {
+    width: 780px;
+    margin-top: 4rem;
+  }
+
+  form#formset label {
+    display: block;
+
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    font-style: normal;
+    font-weight: normal;
+    padding: 0px 0px 12px 0px;
+    color: #5467ae;
+  }
+  form#formset fieldset input {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    height: 45px;
+    display: block;
+    margin-top: 3px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    box-shadow: 0px 3px 15px #0329761a;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    color: #161616;
+    border-color: none;
+    outline: 0;
+    border-style: none;
+  }
+  form#formset label.nome {
+    clear: left;
+  }
+  form#formset label.nome{
+    margin-right: 3rem;
+  }
+  form#formset label.nome,
+  form#formset label.email {
+    float: left;
+
+    width: 373px;
+  }
+  form#formset label.nome input,
+  form#formset label.email input {
+    float: left;
+    width: 373px;
+    padding: 0px;
+  }
+  form#formset label.telefone {
+    float: left;
+    width: 246px;
+    margin-right: 2rem;
+  }
+  form#formset label.telefone input {
+    float: left;
+    width: 246px;
+  }
+  form#formset label.empresa {
+    margin-right: 2rem;
+    float: left;
+    width: 246px;
+  }
+  form#formset label.empresa input {
+    float: left;
+    width: 246px;
+  }
+
+  form#formset label.setor {
+    float: left;
+    width: 246px;
+  }
+  form#formset label.setor input {
+    float: left;
+    width: 246px;
+  }
+
+  form#formset label.konuRadyoButon {
+    clear: none;
+    margin: 0px 0px 0px 25px;
+    padding: 0px 0px 15px 0px;
+  }
+
+  form#formset label.onayAlaniIsaretKutusu {
+    clear: none;
+    margin: 0px 0px 0px 25px;
+    padding: 0px 0px 15px 0px;
+  }
+  form#formset label.textArea {
+    clear: both;
+  }
+  form#formset input.button-submit {
+    margin-top: 2rem;
+    width: 180px;
+    height: 50px;
+    background: #4ebbc5 0% 0% no-repeat padding-box;
+    border: 1px solid #4ebbc5;
+    border-radius: 5px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    line-height: 4.2rem;
+    font-family: 'IBM Plex Sans medium';
+    cursor: pointer;
+    float: right;
+  }
+  form#formset textarea {
+    width: 779px;
+    clear: both;
+    display: block;
+    margin-top: 3px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 15px #0329761a;
+    border-radius: 5px;
+    border-color: none;
+    outline: 0;
+    border-style: none;
+  }
+  form#formset blockquote {
+    margin-bottom: 10px;
+  }
+  form#formset fieldset em,
+  form#formset blockquote em {
+    color: red;
+  }
+}
