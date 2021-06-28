@@ -20,7 +20,25 @@ const solucoes = () => {
       backgroundColor: '#FFFFFF',
       borderRadius: '10px',
       padding: '60px 60px 60px 60px',
-      overflow: 'hidden',
+      // overlfow: 'hidden',
+    },
+    overlay: {
+      background: '#000E2B80',
+    },
+  };
+  const stylesConstrucao = {
+    content: {
+      top: '50%',
+      left: '50%',
+      right: 'auto',
+      bottom: 'auto',
+      marginRight: '-50%',
+      transform: 'translate(-50%, -50%)',
+      backgroundColor: '#FFFFFF',
+      borderRadius: '10px',
+      padding: '60px 60px 60px 60px',
+      height: '740px', // <-- This sets the height
+      overlfowY: 'scroll', // <-- This tells the modal to scrol
     },
     overlay: {
       background: '#000E2B80',
@@ -441,7 +459,7 @@ const solucoes = () => {
         {/* modal sistema para construção civil */}
         <Modal
           isOpen={modalConstrucao}
-          style={customStyles}
+          style={stylesConstrucao}
           onRequestClose={() => {
             setModalConstrucao(false);
           }}
@@ -467,15 +485,13 @@ const solucoes = () => {
             </p>
 
             <ul className="solucoes__modal__ul">
-              <li className="modal-li">
-              Dashboard de acompanhamento;
-              </li>
-              <li className="modal-li">
-              Melhor gestão da Inadimplência;
-              </li>
+              <li className="modal-li">Dashboard de acompanhamento;</li>
+              <li className="modal-li">Melhor gestão da Inadimplência;</li>
               <li className="modal-li">Baixa Automática de Parcelas;</li>
               <li className="modal-li">DRE com POC;</li>
-              <li className="modal-li">Fluxo de Caixa com a memória de cálculo da Caixa Econômica;</li>
+              <li className="modal-li">
+                Fluxo de Caixa com a memória de cálculo da Caixa Econômica;
+              </li>
               <li className="modal-li">Dentre outros.</li>
             </ul>
           </div>
