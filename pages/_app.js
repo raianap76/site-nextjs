@@ -10,5 +10,5 @@ function MyApp({ Component, pageProps }) {
     </Layout>
   )
 }
-
+// teste
 export default MyApp
