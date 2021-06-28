@@ -1,7 +1,48 @@
-import Head from 'next/head';
-import Image from 'next/image';
-
+import React, { useState } from 'react';
+import Modal from 'react-modal';
 export default function Home() {
+  const [modalOrcamento, setModalOrcamento] = useState(false);
+  const [modalAutomatizacao, setModalAutomatizacao] = useState(false);
+  const [modalConstrucao, setModalConstrucao] = useState(false);
+  const [modalGerencial, setModalGerencial] = useState(false);
+  const [modalGestao, setModalGestao] = useState(false);
+  const [modalConciliacao, setModalConciliacao] = useState(false);
+
+  const customStyles = {
+    content: {
+      top: '50%',
+      left: '50%',
+      right: 'auto',
+      bottom: 'auto',
+      marginRight: '-50%',
+      transform: 'translate(-50%, -50%)',
+
+      borderRadius: '10px',
+      padding: '60px 60px 60px 60px',
+      // overlfow: 'hidden',
+    },
+    overlay: {
+      background: '#000E2B80',
+    },
+  };
+  const stylesConstrucao = {
+    content: {
+      top: '50%',
+      left: '50%',
+      right: 'auto',
+      bottom: 'auto',
+      marginRight: '-50%',
+      transform: 'translate(-50%, -50%)',
+
+      borderRadius: '10px',
+      padding: '60px 60px 60px 60px',
+      height: '740px', // <-- This sets the height
+      overlfowY: 'scroll', // <-- This tells the modal to scrol
+    },
+    overlay: {
+      background: '#000E2B80',
+    },
+  };
   return (
     <>
       <div>
@@ -181,38 +222,56 @@ export default function Home() {
                 empresa nos mais diversos segmentos.{' '}
                 <b>Veja algumas soluções que já desenvolvemos:</b>
               </p>
-              <div className="dobra-4__solucoes">
+              <div
+                className="dobra-4__solucoes"
+                onClick={() => setModalOrcamento(true)}
+              >
                 <div className="dobra-4__solucoes-empr"></div>
                 <p className="dobra-4__solucoes-p">Orçamento empresarial</p>
               </div>
-              <div className="dobra-4__solucoes mt-5">
+              <div
+                className="dobra-4__solucoes mt-5"
+                onClick={() => setModalConstrucao(true)}
+              >
                 <div className="dobra-4__solucoes-civil"></div>
                 <p className="dobra-4__solucoes-p">
                   Sistema para Construção Civil
                 </p>
               </div>
-              <div className="dobra-4__solucoes mt-5">
+              <div
+                className="dobra-4__solucoes mt-5"
+                onClick={() => setModalGerencial(true)}
+              >
                 <div className="dobra-4__solucoes-gerencial"></div>
                 <p className="dobra-4__solucoes-p">
                   Sistema de Informação Gerencial
                 </p>
               </div>
 
-              <div className="dobra-4__solucoes mt-5">
+              <div
+                className="dobra-4__solucoes mt-5"
+                onClick={() => setModalAutomatizacao(true)}
+              >
                 <div className="dobra-4__solucoes-relatorio"></div>
                 <p className="dobra-4__solucoes-p">
                   Automatização de relatórios
                 </p>
               </div>
 
-              <div className="dobra-4__solucoes mt-5">
+              <div
+                className="dobra-4__solucoes mt-5"
+                onClick={() => setModalGestao(true)}
+              >
                 <div className="dobra-4__solucoes-cobranca"></div>
                 <p className="dobra-4__solucoes-p">
                   Gestão para setor de cobrança
                 </p>
               </div>
 
-              <div className="dobra-4__solucoes mt-5">
+              <div
+                className="dobra-4__solucoes mt-5"
+                onClick={() => setModalConciliacao(true)}
+              >
                 <div className="dobra-4__solucoes-conciliacao"></div>
                 <p className="dobra-4__solucoes-p">Conciliação bancária</p>
               </div>
@@ -269,6 +328,298 @@ export default function Home() {
             </div>
           </div>
         </div>
+        {/* modal orcamento empresarial */}
+        <Modal
+          isOpen={modalOrcamento}
+          style={customStyles}
+          className="modalOrcamento"
+          onRequestClose={() => {
+            setModalOrcamento(false);
+          }}
+          // shouldCloseOnOverlayClick={false}
+        >
+          <div className="solucoes__modal">
+            <div className="row">
+              <div className="col-6">
+                <div className="solucoes__modal__cardHeader">
+                  <div className="sol-page__solucoes__card-money"></div>
+                  <h2 className="solucoes__modal__cardHeader-header">
+                    Orçamento empresarial
+                  </h2>
+                </div>
+                <p className="solucoes__modal__cardHeader-paragraph">
+                  O nosso sistema de orçamento empresarial automatiza processos
+                  para que a sua equipe tenha um ganho operacional
+                  significativo. Com o nosso sistema de orçamento empresarial,
+                  você consegue envolver todas as áreas da empresa para saber o
+                  quanto pode gastar e ter mais planejado quanto você vai ter de
+                  lucro.
+                </p>
+                <p className="solucoes__modal__cardHeader-paragraph">
+                  Lance com facilidade as suas receitas e receba demonstrativos
+                  ou relatórios contábeis, como:
+                </p>
+
+                <ul className="solucoes__modal__ul">
+                  <li className="modal-li">
+                    DRE Previsto x Realizado Automatizado;
+                  </li>
+                  <li className="modal-li">
+                    Fluxo de Caixa Previsto x Realizado Automatizado;
+                  </li>
+                  <li className="modal-li">Balanço;</li>
+                  <li className="modal-li">Dentre outros.</li>
+                </ul>
+              </div>
+              <div className="col-6">
+                <div className="solucoes__modal__orcamentoModal"></div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="solucoes__modal__closeModal"
+            onClick={() => setModalOrcamento(false)}
+          ></div>
+        </Modal>
+
+        {/* modal automatizacao relatórios */}
+        <Modal
+          isOpen={modalAutomatizacao}
+          style={customStyles}
+          onRequestClose={() => {
+            setModalAutomatizacao(false);
+          }}
+          // shouldCloseOnOverlayClick={false}
+        >
+          <div className="solucoes__modal">
+            <div className="row">
+              <div className="col-6">
+                <div className="solucoes__modal__cardHeader">
+                  <div className="sol-page__solucoes__card-automatizacao"></div>
+                  <h2 className="solucoes__modal__cardHeader-header">
+                    Automatização de relatórios
+                  </h2>
+                </div>
+                <p className="solucoes__modal__cardHeader-paragraph">
+                  Se na sua empresa é preciso despender horas de trabalho dos
+                  colaboradores para gerar relatórios, essa solução foi feita
+                  para você. Com o nosso sistema de Automatização de Relatórios,
+                  você consegue os dados que precisa em poucos minutos.
+                </p>
+                <p className="solucoes__modal__cardHeader-paragraph">
+                  Assim, os seus colaboradores não precisam ficar alocados em
+                  uma demanda operacional e podem empregar o seu tempo em
+                  atividades que trarão melhores resultados. Facilite a
+                  realização de processos burocráticos e ganhe agilidade,
+                  produtividade e reduza custos.
+                </p>
+              </div>
+              <div className="col-6">
+                <div className="solucoes__modal__automatizacaoModal"></div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="solucoes__modal__closeModal"
+            onClick={() => setModalAutomatizacao(false)}
+          ></div>
+        </Modal>
+        {/* modal sistema gerencial */}
+        <Modal
+          isOpen={modalGerencial}
+          style={customStyles}
+          className="modalGerencial"
+          onRequestClose={() => {
+            setModalGerencial(false);
+          }}
+          // shouldCloseOnOverlayClick={false}
+        >
+          <div className="solucoes__modal">
+            <div className="row">
+              <div className="col-7">
+                <div className="solucoes__modal__cardHeader">
+                  <div className="sol-page__solucoes__card-gerencial"></div>
+                  <h2 className="solucoes__modal__cardHeader-header">
+                    Sistema de Informação Gerencial
+                  </h2>
+                </div>
+                <p className="solucoes__modal__cardHeader-paragraph">
+                  Ferramenta para investir em Business Intelligence e melhorar o
+                  controle dos processos da sua empresa. Nós geramos uma série
+                  de insumos e informações consistentes para apoiar o seu
+                  trabalho como gestor.
+                </p>
+                <p className="solucoes__modal__cardHeader-paragraph">
+                  O nosso Sistema de Informação Gerencial vai ajudar você a ter
+                  uma visão sistêmica dos seus processos, para que você consiga
+                  identificar áreas que precisam de melhorias. Trate dados
+                  valiosos para os mais diversos processos (Back Office,
+                  Produtivo, Comercial e muito mais).Assim, os seus
+                  colaboradores não precisam ficar alocados em uma demanda
+                  operacional e podem empregar o seu tempo em atividades que
+                  trarão melhores resultados. Facilite a realização de processos
+                  burocráticos e ganhe agilidade, produtividade e reduza custos.
+                </p>
+                <p className="solucoes__modal__cardHeader-paragraph">
+                  Nosso objetivo é que você tenha uma leitura facilitada das
+                  informações gerenciais importantes para traçar boas
+                  estratégias e obter melhores resultados. Faça uma abordagem
+                  efetiva dos seus dados e torne suas decisões mais assertivas!
+                </p>
+              </div>
+              <div className="col-5 col-12-m col-12-s">
+                <div className="solucoes__modal__gerencialModal"></div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="solucoes__modal__closeModal"
+            onClick={() => setModalGerencial(false)}
+          ></div>
+        </Modal>
+
+        {/* modal sistema para construção civil */}
+        <Modal
+          isOpen={modalConstrucao}
+          style={stylesConstrucao}
+          className="modalConstrucao"
+          onRequestClose={() => {
+            setModalConstrucao(false);
+          }}
+          // shouldCloseOnOverlayClick={false}
+        >
+          <div className="solucoes__modal">
+            <div className="solucoes__modal__cardHeader">
+              <div className="sol-page__solucoes__card-construcao"></div>
+              <div className="solucoes__modal__cardHeader-column">
+                <h2 className="solucoes__modal__cardHeader__construcao-header">
+                  Sistema para Construção Civil
+                </h2>
+                <p className="solucoes__modal__cardHeader__construcao-rodape">
+                  Sistema para crédito imobiliário/associativo
+                </p>
+              </div>
+            </div>
+            <p className="solucoes__modal__cardHeader__construcao-paragraph">
+              Este sistema consolida todas as informações do crédito
+              imobiliário/associativo para facilitar a leitura e o entendimento
+              dos arquivos enviados pela CAIXA. Com isso, auxiliamos a sua
+              equipe no gerenciamento de dados, a fim de otimizar os processos
+              da sua obra.
+            </p>
+            <p className="solucoes__modal__cardHeader__construcao-paragraph">
+              O banco de dados gerado pela VP6 é facilmente integrável ao ERP da
+              sua empresa para que você tenha:
+            </p>
+
+            <ul className="solucoes__modal__ul">
+              <li className="modal-li">Dashboard de acompanhamento;</li>
+              <li className="modal-li">Melhor gestão da Inadimplência;</li>
+              <li className="modal-li">Baixa Automática de Parcelas;</li>
+              <li className="modal-li">DRE com POC;</li>
+              <li className="modal-li">
+                Fluxo de Caixa com a memória de cálculo da Caixa Econômica;
+              </li>
+              <li className="modal-li">Dentre outros.</li>
+            </ul>
+          </div>
+          <div className="solucoes__modal__construcaoModal"></div>
+          <div
+            className="solucoes__modal__closeModal"
+            onClick={() => setModalConstrucao(false)}
+          ></div>
+        </Modal>
+        {/* modal gestor de cobrança */}
+        <Modal
+          isOpen={modalGestao}
+          style={customStyles}
+          onRequestClose={() => {
+            setModalGestao(false);
+          }}
+          // shouldCloseOnOverlayClick={false}
+        >
+          <div className="solucoes__modal">
+            <div className="row">
+              <div className="col-6">
+                <div className="solucoes__modal__cardHeader">
+                  <div className="sol-page__solucoes__card-cobrancaModal"></div>
+                  <h2 className="solucoes__modal__cardHeader-header">
+                    Gestão para setor de cobrança
+                  </h2>
+                </div>
+                <p className="solucoes__modal__cardHeader-paragraph">
+                  Essa solução é perfeita para empresas que possuem um grande
+                  volume de clientes. Com o nosso sistema, você consegue ter
+                  toda a cobrança da sua organização sistematizada.
+                </p>
+                <p className="solucoes__modal__cardHeader-paragraph">
+                  Faça o controle das contas a receber, gerencie com efetividade
+                  as dívidas dos seus clientes e estruture, a partir disso, a
+                  sua régua de cobranças. Configure e-mails, recados
+                  personalizados e consiga encaminhar contatos direto para o seu
+                  departamento jurídico.
+                </p>
+                <p className="solucoes__modal__cardHeader-paragraph">
+                  Visualize de maneira simples no nosso sistema as ligações
+                  telefônicas recebidas e ações realizadas em cima delas e tenha
+                  mais clareza sobre a performance de cada colaborador da sua
+                  equipe!
+                </p>
+              </div>
+              <div className="col-6">
+                <div className="solucoes__modal__cobrancaModal"></div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="solucoes__modal__closeModal"
+            onClick={() => setModalGestao(false)}
+          ></div>
+        </Modal>
+
+        {/* modal conciliação bancaria */}
+        <Modal
+          isOpen={modalConciliacao}
+          style={customStyles}
+          onRequestClose={() => {
+            setModalConciliacao(false);
+          }}
+        >
+          <div className="solucoes__modal">
+            <div className="row">
+              <div className="col-6">
+                <div className="solucoes__modal__cardHeader">
+                  <div className="sol-page__solucoes__card-bancaria"></div>
+                  <h2 className="solucoes__modal__cardHeader-header">
+                    Conciliação bancária
+                  </h2>
+                </div>
+                <p className="solucoes__modal__cardHeader-paragraph">
+                  Solução feita para empresas que trabalham com várias contas
+                  correntes. Importe lançamentos do seu extrato automaticamente
+                  e mantenha seu fluxo de caixa atualizado.
+                </p>
+                <p className="solucoes__modal__cardHeader-paragraph">
+                  Saiba quais clientes pagaram e tenha toda a sua movimentação
+                  bancária refletida no nosso sistema. Nós geramos e
+                  interpretamos arquivos bancários para que você economize tempo
+                  e não precise registrar pagamentos e recebimentos manualmente.
+                </p>
+                <p className="solucoes__modal__cardHeader-paragraph">
+                  Automatize os lançamentos da sua empresa e mantenha os saldos
+                  das contas bancárias em dia!
+                </p>
+              </div>
+              <div className="col-6">
+                <div className="solucoes__modal__conciliacaoModal"></div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="solucoes__modal__closeModal"
+            onClick={() => setModalConciliacao(false)}
+          ></div>
+        </Modal>
       </div>
     </>
   );
