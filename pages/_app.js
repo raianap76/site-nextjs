@@ -1,4 +1,4 @@
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 import 'bootstrap/dist/css/bootstrap.css'
 import '../styles/main.scss';
 
