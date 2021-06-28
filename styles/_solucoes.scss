@@ -611,6 +611,7 @@
     &-header {
       margin-left: 1.5rem;
       margin-top: 2rem;
+      margin-bottom:3rem ;
       text-align: left;
       font-size: 3.2rem;
       line-height: 4.8rem;
@@ -621,7 +622,6 @@
     }
     &-paragraph {
       width: 593px;
-      margin-top: 2.5rem;
       text-align: left;
       font-size: 1.6rem;
       line-height: 2.5rem;
@@ -653,13 +653,23 @@
   }
   &__gerencialModal {
     margin-right: -6rem;
-    margin-left: 5rem;
+    margin-left: 1rem;
+    margin-top:2.8rem;
     width: 486px;
     height: 396px;
     background-image: url('../assets/informação gerencial.PNG');
-    background-size: 89% 100%;
+    background-size: 92% 100%;
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: top left;
+  }
+  &__construcaoModal {
+    margin-top:2.8rem;
+    width: 1170px;
+    height: 644px;
+    background-image: url('../assets/modal-construcao-2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   &__closeModal {
     position: absolute;

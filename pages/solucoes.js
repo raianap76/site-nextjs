@@ -7,6 +7,7 @@ import Image from 'next/image';
 const solucoes = () => {
   const [modalOrcamento, setModalOrcamento] = useState(false);
   const [modalAutomatizacao, setModalAutomatizacao] = useState(false);
+  const [modalConstrucao, setModalConstrucao] = useState(false);
   const [modalGerencial, setModalGerencial] = useState(false);
   const customStyles = {
     content: {
@@ -18,7 +19,8 @@ const solucoes = () => {
       transform: 'translate(-50%, -50%)',
       backgroundColor: '#FFFFFF',
       borderRadius: '10px',
-      padding: '60px',
+      padding: '60px 60px 60px 60px',
+      overflow: 'hidden',
     },
     overlay: {
       background: '#000E2B80',
@@ -127,7 +129,10 @@ const solucoes = () => {
               </button>
             </div>
 
-            <div className="sol-page__solucoes__card">
+            <div
+              className="sol-page__solucoes__card"
+              onClick={() => setModalConstrucao(true)}
+            >
               <div className="sol-page__solucoes__card-construcao"></div>
               <div className="sol-page__solucoes__card-text">
                 Sistema para Construção Civil
@@ -391,7 +396,7 @@ const solucoes = () => {
         >
           <div className="solucoes__modal">
             <div className="row">
-              <div className="col-6">
+              <div className="col-7">
                 <div className="solucoes__modal__cardHeader">
                   <div className="sol-page__solucoes__card-gerencial"></div>
                   <h2 className="solucoes__modal__cardHeader-header">
@@ -422,7 +427,7 @@ const solucoes = () => {
                   efetiva dos seus dados e torne suas decisões mais assertivas!
                 </p>
               </div>
-              <div className="col-6">
+              <div className="col-5 col-12-m col-12-s">
                 <div className="solucoes__modal__gerencialModal"></div>
               </div>
             </div>
@@ -430,6 +435,54 @@ const solucoes = () => {
           <div
             className="solucoes__modal__closeModal"
             onClick={() => setModalGerencial(false)}
+          ></div>
+        </Modal>
+
+        {/* modal sistema para construção civil */}
+        <Modal
+          isOpen={modalConstrucao}
+          style={customStyles}
+          onRequestClose={() => {
+            setModalConstrucao(false);
+          }}
+          // shouldCloseOnOverlayClick={false}
+        >
+          <div className="solucoes__modal">
+            <div className="solucoes__modal__cardHeader">
+              <div className="sol-page__solucoes__card-money"></div>
+              <h2 className="solucoes__modal__cardHeader-header">
+                Sistema para Construção Civil
+              </h2>
+            </div>
+            <p className="solucoes__modal__cardHeader-paragraph">
+              Este sistema consolida todas as informações do crédito
+              imobiliário/associativo para facilitar a leitura e o entendimento
+              dos arquivos enviados pela CAIXA. Com isso, auxiliamos a sua
+              equipe no gerenciamento de dados, a fim de otimizar os processos
+              da sua obra.
+            </p>
+            <p className="solucoes__modal__cardHeader-paragraph">
+              O banco de dados gerado pela VP6 é facilmente integrável ao ERP da
+              sua empresa para que você tenha:
+            </p>
+
+            <ul className="solucoes__modal__ul">
+              <li className="modal-li">
+              Dashboard de acompanhamento;
+              </li>
+              <li className="modal-li">
+              Melhor gestão da Inadimplência;
+              </li>
+              <li className="modal-li">Baixa Automática de Parcelas;</li>
+              <li className="modal-li">DRE com POC;</li>
+              <li className="modal-li">Fluxo de Caixa com a memória de cálculo da Caixa Econômica;</li>
+              <li className="modal-li">Dentre outros.</li>
+            </ul>
+          </div>
+          <div className="solucoes__modal__construcaoModal"></div>
+          <div
+            className="solucoes__modal__closeModal"
+            onClick={() => setModalConstrucao(false)}
           ></div>
         </Modal>
       </div>
