@@ -17,7 +17,7 @@ const solucoes = () => {
       bottom: 'auto',
       marginRight: '-50%',
       transform: 'translate(-50%, -50%)',
-      backgroundColor: '#FFFFFF',
+
       borderRadius: '10px',
       padding: '60px 60px 60px 60px',
       // overlfow: 'hidden',
@@ -34,11 +34,12 @@ const solucoes = () => {
       bottom: 'auto',
       marginRight: '-50%',
       transform: 'translate(-50%, -50%)',
-      backgroundColor: '#FFFFFF',
+
       borderRadius: '10px',
       padding: '60px 60px 60px 60px',
       height: '740px', // <-- This sets the height
       overlfowY: 'scroll', // <-- This tells the modal to scrol
+
     },
     overlay: {
       background: '#000E2B80',
@@ -312,6 +313,7 @@ const solucoes = () => {
         <Modal
           isOpen={modalOrcamento}
           style={customStyles}
+          className="modalOrcamento"
           onRequestClose={() => {
             setModalOrcamento(false);
           }}

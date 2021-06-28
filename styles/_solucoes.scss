@@ -279,11 +279,10 @@
         letter-spacing: 0px;
         color: #ffffff;
         position: absolute;
-        bottom:-1rem;
+        bottom: -1rem;
         left: 2.4rem;
-        border:none;
+        border: none;
         display: none;
-
       }
 
       &:hover {
@@ -291,7 +290,7 @@
         box-shadow: 0px 5px 20px #a6aed81a;
         border-radius: 10px;
 
-        .sol-page__solucoes__card__button{
+        .sol-page__solucoes__card__button {
           display: block !important;
         }
       }
@@ -611,7 +610,7 @@
     &-header {
       margin-left: 1.5rem;
       margin-top: 2rem;
-      margin-bottom:3rem ;
+      margin-bottom: 3rem;
       text-align: left;
       font-size: 3.2rem;
       line-height: 4.8rem;
@@ -664,7 +663,7 @@
   &__gerencialModal {
     margin-right: -6rem;
     margin-left: 1rem;
-    margin-top:2.8rem;
+    margin-top: 2.8rem;
     width: 486px;
     height: 396px;
     background-image: url('../assets/informação gerencial.PNG');
@@ -673,7 +672,7 @@
     background-position: top left;
   }
   &__construcaoModal {
-    margin-top:2.8rem;
+    margin-top: 2.8rem;
     width: 1170px;
     height: 644px;
     background-image: url('../assets/modal-construcao-2.png');
@@ -711,4 +710,19 @@ ul.solucoes__modal__ul {
   line-height: 2.8rem;
   color: #4ebbc5;
   padding-left: 0rem;
+}
+.modalOrcamento {
+  backface-visibility: hidden;
+  background-color: #ffff;
+  position: absolute;
+  top: 50%;
+  overflow-y: auto;
+  // width:80vw;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  padding: 60px 60px 60px 60px;
 }
