@@ -9,6 +9,8 @@ const solucoes = () => {
   const [modalAutomatizacao, setModalAutomatizacao] = useState(false);
   const [modalConstrucao, setModalConstrucao] = useState(false);
   const [modalGerencial, setModalGerencial] = useState(false);
+  const [modalGestao, setModalGestao] = useState(false);
+  const [modalConciliacao, setModalConciliacao] = useState(false);
   const customStyles = {
     content: {
       top: '50%',
@@ -39,7 +41,6 @@ const solucoes = () => {
       padding: '60px 60px 60px 60px',
       height: '740px', // <-- This sets the height
       overlfowY: 'scroll', // <-- This tells the modal to scrol
-
     },
     overlay: {
       background: '#000E2B80',
@@ -187,7 +188,10 @@ const solucoes = () => {
               </button>
             </div>
 
-            <div className="sol-page__solucoes__card">
+            <div
+              className="sol-page__solucoes__card"
+              onClick={() => setModalGestao(true)}
+            >
               <div className="sol-page__solucoes__card-cobranca"></div>
               <div className="sol-page__solucoes__card-text">
                 Gestão para setor de cobrança
@@ -197,7 +201,10 @@ const solucoes = () => {
               </button>
             </div>
 
-            <div className="sol-page__solucoes__card sol-page__solucoes__card__remove-margin">
+            <div
+              className="sol-page__solucoes__card sol-page__solucoes__card__remove-margin"
+              onClick={() => setModalConciliacao(true)}
+            >
               <div className="sol-page__solucoes__card-bancaria"></div>
               <div className="sol-page__solucoes__card-text">
                 Conciliação bancária
@@ -409,6 +416,7 @@ const solucoes = () => {
         <Modal
           isOpen={modalGerencial}
           style={customStyles}
+          className="modalGerencial"
           onRequestClose={() => {
             setModalGerencial(false);
           }}
@@ -462,6 +470,7 @@ const solucoes = () => {
         <Modal
           isOpen={modalConstrucao}
           style={stylesConstrucao}
+          className="modalConstrucao"
           onRequestClose={() => {
             setModalConstrucao(false);
           }}
@@ -469,19 +478,24 @@ const solucoes = () => {
         >
           <div className="solucoes__modal">
             <div className="solucoes__modal__cardHeader">
-              <div className="sol-page__solucoes__card-money"></div>
-              <h2 className="solucoes__modal__cardHeader-header">
-                Sistema para Construção Civil
-              </h2>
+              <div className="sol-page__solucoes__card-construcao"></div>
+              <div className="solucoes__modal__cardHeader-column">
+                <h2 className="solucoes__modal__cardHeader__construcao-header">
+                  Sistema para Construção Civil
+                </h2>
+                <p className="solucoes__modal__cardHeader__construcao-rodape">
+                  Sistema para crédito imobiliário/associativo
+                </p>
+              </div>
             </div>
-            <p className="solucoes__modal__cardHeader-paragraph-construcao ">
+            <p className="solucoes__modal__cardHeader__construcao-paragraph">
               Este sistema consolida todas as informações do crédito
               imobiliário/associativo para facilitar a leitura e o entendimento
               dos arquivos enviados pela CAIXA. Com isso, auxiliamos a sua
               equipe no gerenciamento de dados, a fim de otimizar os processos
               da sua obra.
             </p>
-            <p className="solucoes__modal__cardHeader-paragraph-construcao ">
+            <p className="solucoes__modal__cardHeader__construcao-paragraph">
               O banco de dados gerado pela VP6 é facilmente integrável ao ERP da
               sua empresa para que você tenha:
             </p>
@@ -501,6 +515,97 @@ const solucoes = () => {
           <div
             className="solucoes__modal__closeModal"
             onClick={() => setModalConstrucao(false)}
+          ></div>
+        </Modal>
+        {/* modal gestor de cobrança */}
+        <Modal
+          isOpen={modalGestao}
+          style={customStyles}
+          onRequestClose={() => {
+            setModalGestao(false);
+          }}
+          // shouldCloseOnOverlayClick={false}
+        >
+          <div className="solucoes__modal">
+            <div className="row">
+              <div className="col-6">
+                <div className="solucoes__modal__cardHeader">
+                  <div className="sol-page__solucoes__card-cobrancaModal"></div>
+                  <h2 className="solucoes__modal__cardHeader-header">
+                    Gestão para setor de cobrança
+                  </h2>
+                </div>
+                <p className="solucoes__modal__cardHeader-paragraph">
+                  Essa solução é perfeita para empresas que possuem um grande
+                  volume de clientes. Com o nosso sistema, você consegue ter
+                  toda a cobrança da sua organização sistematizada.
+                </p>
+                <p className="solucoes__modal__cardHeader-paragraph">
+                  Faça o controle das contas a receber, gerencie com efetividade
+                  as dívidas dos seus clientes e estruture, a partir disso, a
+                  sua régua de cobranças. Configure e-mails, recados
+                  personalizados e consiga encaminhar contatos direto para o seu
+                  departamento jurídico.
+                </p>
+                <p className="solucoes__modal__cardHeader-paragraph">
+                  Visualize de maneira simples no nosso sistema as ligações
+                  telefônicas recebidas e ações realizadas em cima delas e tenha
+                  mais clareza sobre a performance de cada colaborador da sua
+                  equipe!
+                </p>
+              </div>
+              <div className="col-6">
+                <div className="solucoes__modal__cobrancaModal"></div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="solucoes__modal__closeModal"
+            onClick={() => setModalGestao(false)}
+          ></div>
+        </Modal>
+
+        {/* modal conciliação bancaria */}
+        <Modal
+          isOpen={modalConciliacao}
+          style={customStyles}
+          onRequestClose={() => {
+            setModalConciliacao(false);
+          }}
+        >
+          <div className="solucoes__modal">
+            <div className="row">
+              <div className="col-6">
+                <div className="solucoes__modal__cardHeader">
+                  <div className="sol-page__solucoes__card-bancaria"></div>
+                  <h2 className="solucoes__modal__cardHeader-header">
+                    Conciliação bancária
+                  </h2>
+                </div>
+                <p className="solucoes__modal__cardHeader-paragraph">
+                  Solução feita para empresas que trabalham com várias contas
+                  correntes. Importe lançamentos do seu extrato automaticamente
+                  e mantenha seu fluxo de caixa atualizado.
+                </p>
+                <p className="solucoes__modal__cardHeader-paragraph">
+                  Saiba quais clientes pagaram e tenha toda a sua movimentação
+                  bancária refletida no nosso sistema. Nós geramos e
+                  interpretamos arquivos bancários para que você economize tempo
+                  e não precise registrar pagamentos e recebimentos manualmente.
+                </p>
+                <p className="solucoes__modal__cardHeader-paragraph">
+                  Automatize os lançamentos da sua empresa e mantenha os saldos
+                  das contas bancárias em dia!
+                </p>
+              </div>
+              <div className="col-6">
+                <div className="solucoes__modal__conciliacaoModal"></div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="solucoes__modal__closeModal"
+            onClick={() => setModalConciliacao(false)}
           ></div>
         </Modal>
       </div>

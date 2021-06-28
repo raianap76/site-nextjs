@@ -300,18 +300,21 @@
       }
 
       &-money {
+
         width: 76px;
         height: 76px;
         background-image: url('../assets/sol-money.svg');
-        background-size: cover;
-        background-position: center;
+        background-size: 95%;
+        background-position: right;
+        background-repeat: no-repeat;
       }
       &-construcao {
         width: 80px;
         height: 76px;
         background-image: url('../assets/contrucao-rosa.svg');
-        background-size: cover;
-        background-position: center;
+        background-size: 95%;
+        background-position: right;
+        background-repeat: no-repeat;
       }
       &-gerencial {
         width: 76px;
@@ -325,8 +328,9 @@
         width: 75px;
         height: 75px;
         background-image: url('../assets/automatizacao-rosa.svg');
-        background-size: cover;
-        background-position: center;
+        background-size: 95%;
+        background-position: right;
+        background-repeat: no-repeat;
       }
 
       &-cobranca {
@@ -335,6 +339,14 @@
         background-image: url('../assets/cobranca-rosa.svg');
         background-size: cover;
         background-position: center;
+      }
+      &-cobrancaModal {
+        width: 76px;
+        height: 76px;
+        background-image: url('../assets/cobranca-rosa.svg');
+        background-size: 95%;
+        background-position: right;
+        background-repeat: no-repeat;
       }
       &-bancaria {
         width: 76px;
@@ -607,7 +619,13 @@
     flex-direction: row;
     align-items: left;
     justify-content: left;
+
+    &-column {
+      display: block;
+    }
+
     &-header {
+      width: 534px;
       margin-left: 1.5rem;
       margin-top: 2rem;
       margin-bottom: 3rem;
@@ -629,15 +647,39 @@
       letter-spacing: 0px;
       color: #5467ae;
     }
-    &-paragraph-construcao {
-      max-width: 972px;
-      text-align: left;
-      font-size: 1.6rem;
-      line-height: 2.5rem;
-      font-style: normal;
-      font-weight: normal;
-      letter-spacing: 0px;
-      color: #5467ae;
+    &__construcao {
+      &-rodape {
+        margin-bottom: 2.5rem;
+        margin-left: 1.5rem;
+        text-align: left;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        font-style: italic;
+        font-weight: normal;
+        letter-spacing: 0px;
+        color: #7ab1e0;
+      }
+      &-header {
+        margin-left: 1.5rem;
+        margin-top: 2rem;
+        text-align: left;
+        font-size: 3.2rem;
+        line-height: 4.8rem;
+        font-style: normal;
+        font-weight: bold;
+        letter-spacing: 0px;
+        color: #0157a5 !important;
+      }
+      &-paragraph {
+        max-width: 972px;
+        text-align: left;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        font-style: normal;
+        font-weight: normal;
+        letter-spacing: 0px;
+        color: #5467ae;
+      }
     }
   }
   &__orcamentoModal {
@@ -681,6 +723,26 @@
     background-position: left;
     margin-left: -2rem;
   }
+  &__cobrancaModal {
+    margin-right: -6rem;
+    margin-left: 5rem;
+    width: 486px;
+    height: 396px;
+    background-image: url('../assets/modal-cobranca.png');
+    background-size: 89% 89%;
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+  &__conciliacaoModal {
+    margin-right: -6rem;
+    margin-left: 5rem;
+    width: 486px;
+    height: 396px;
+    background-image: url('../assets/modal-conciliacao.png');
+    background-size: 89% 89%;
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
   &__closeModal {
     position: absolute;
     top: 0;
@@ -718,6 +780,40 @@ ul.solucoes__modal__ul {
   top: 50%;
   overflow-y: auto;
   // width:80vw;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  padding: 60px 60px 60px 60px;
+}
+.modalConstrucao {
+  backface-visibility: hidden;
+  background-color: #ffff;
+  position: absolute;
+  top: 50%;
+  overflow-y: auto;
+  // width:80vw;
+  max-height: 85vh; // <-- This sets the height
+  max-width: 1240px;
+  overflow-y: scroll;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  padding: 60px 60px 60px 60px;
+}
+.modalGerencial {
+  backface-visibility: hidden;
+  background-color: #ffff;
+  position: absolute;
+  top: 50%;
+  overflow-y: auto;
+  max-width: 1240px;
+  overflow-x: hidden;
   left: 50%;
   right: auto;
   bottom: auto;
