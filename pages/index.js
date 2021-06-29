@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
+import Link from 'next/link';
+
 export default function Home() {
   const [modalOrcamento, setModalOrcamento] = useState(false);
   const [modalAutomatizacao, setModalAutomatizacao] = useState(false);
@@ -65,9 +67,9 @@ export default function Home() {
                   integráveis a outras ferramentas para fortalecer as operações
                   do seu negócio, aliando tecnologia à performance.
                 </p>
-                <button className="hero-home__button-faleConosco">
-                  Fale Conosco
-                </button>
+                <div className="hero-home__button-faleConosco">
+                  <Link href="/contato/#PreencherForm">Fale Conosco</Link>
+                </div>
               </div>
             </div>
           </div>
@@ -157,7 +159,9 @@ export default function Home() {
               </div>
             </div>
             <div className="dobra-2__aligncenter">
-              <button className="dobra-2__button">Fale Conosco</button>
+              <div className="dobra-2__button">
+                <Link href="/contato/#PreencherForm">Fale Conosco</Link>
+              </div>
             </div>
           </div>
         </div>
@@ -209,7 +213,9 @@ export default function Home() {
           </div>
 
           <div className="dobra-2__aligncenter">
-            <button className="dobra-2__button">Saiba Mais</button>
+            <div className="dobra-2__button">
+              <Link href="/tecnologia">Saiba Mais</Link>
+            </div>
           </div>
         </div>
         <div className="dobra-4">
@@ -275,7 +281,9 @@ export default function Home() {
                 <div className="dobra-4__solucoes-conciliacao"></div>
                 <p className="dobra-4__solucoes-p">Conciliação bancária</p>
               </div>
-              <button className="dobra-4__button">Saiba Mais</button>
+              <div className="dobra-4__button">
+                <Link href="/solucoes">Saiba Mais</Link>
+              </div>
             </div>
           </div>
         </div>
@@ -321,9 +329,11 @@ export default function Home() {
                 <b>Queremos te ajudar a encontrar uma solução.</b>
               </p>
               <div className="dobra-2__aligncenter">
-                <button className="dobra-cta__button">
-                  seja nosso próximo case
-                </button>
+                <div className="dobra-cta__button">
+                  <Link href="/contato">
+                    seja nosso próximo case
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

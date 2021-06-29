@@ -1,4 +1,5 @@
 import Meta from '../components/meta';
+import Link from 'next/link';
 
 const tecnologia = () => {
   return (
@@ -25,7 +26,11 @@ const tecnologia = () => {
                 <b>desenvolvimento de projetos</b> da VP6.
               </p>
               <div className="dobra-2__aligncenter">
-                <button className="tec-page__button">ver tecnologias</button>
+                <div className="tec-page__button">
+                  <a href="/solucoes" href="#vertecnologias">
+                    ver tecnologias
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -33,7 +38,9 @@ const tecnologia = () => {
 
         <div className="tec-page__dobra-3">
           <div className="container">
-            <h2 className="tec-page__dobra-3__title">Tecnologias Utilizadas</h2>
+            <h2 className="tec-page__dobra-3__title" id="vertecnologias">
+              Tecnologias Utilizadas
+            </h2>
             <div className="dobra-2__aligncenter">
               <p className="tec-page__dobra-3__paragraph">
                 Trabalhamos com <b>metodologias ágeis</b> adaptáveis para criar
@@ -114,9 +121,9 @@ const tecnologia = () => {
                 sua empresa.
               </p>
               <div className="dobra-2__aligncenter">
-                <button className="dobra-cta__button">
-                  seja nosso próximo case
-                </button>
+                <div className="dobra-cta__button">
+                  <Link href="/contato">seja nosso próximo case</Link>
+                </div>
               </div>
             </div>
           </div>

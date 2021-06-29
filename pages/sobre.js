@@ -1,11 +1,14 @@
 import Meta from '../components/meta';
 import React, { useState } from 'react';
+import Link from 'next/link';
 
 const about = () => {
   const [content, setContent] = useState(
     'Nosso time é diverso, respeitamos e aceitamos as diferenças de cada um. Temos profissionais com formações distintas e habilidades distintas e acreditamos que é essa característica que nos fará chegar mais longe.'
   );
-  const [actived1, setActived1] = useState('about-page__dobra-1__col-2-buttons-active');
+  const [actived1, setActived1] = useState(
+    'about-page__dobra-1__col-2-buttons-active'
+  );
   const [actived2, setActived2] = useState('');
   const [actived3, setActived3] = useState('');
 
@@ -20,7 +23,9 @@ const about = () => {
     }
     if (e.target.id === 'button-2') {
       setActived2('about-page__dobra-1__col-2-buttons-active');
-      setContent('Nossos colaboradores possuem capacitação profissional para atuar com o que há de mais novo e avançado no mercado de TI.');
+      setContent(
+        'Nossos colaboradores possuem capacitação profissional para atuar com o que há de mais novo e avançado no mercado de TI.'
+      );
     } else {
       setActived2('');
     }
@@ -53,7 +58,9 @@ const about = () => {
                 <b> baixo custo</b> e com rapidez de implantação.
               </p>
               <div className="dobra-2__aligncenter">
-                <button className="about-page__button">saiba mais</button>
+                <div className="about-page__button">
+                  <Link href="/solucoes">Saiba Mais</Link>
+                </div>
               </div>
             </div>
           </div>
@@ -145,12 +152,16 @@ const about = () => {
             <div className="dobra-trabalhe__content">
               <p className="dobra-trabalhe__title">Trabalhe com a gente</p>
               <p className="dobra-trabalhe__paragraph">
-              Estamos à procura de profissionais talentosos e dedicados para inovar junto com a gente! <b>Quer fazer parte do nosso time?</b>
+                Estamos à procura de profissionais talentosos e dedicados para
+                inovar junto com a gente! <b>Quer fazer parte do nosso time?</b>
               </p>
               <div className="dobra-2__aligncenter">
-                <button className="dobra-trabalhe__button">
-                    mande seu currículo
-                </button>
+                {/* <button className="dobra-trabalhe__button">
+                  mande seu currículo
+                </button> */}
+                <div className="dobra-trabalhe__button">
+                  <Link href="/contato/#PreencherForm">mande seu currículo</Link>
+                </div>
               </div>
             </div>
           </div>

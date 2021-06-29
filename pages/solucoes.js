@@ -1,7 +1,7 @@
 import Meta from '../components/meta';
 import React, { useState } from 'react';
 import Modal from 'react-modal';
-import Image from 'next/image';
+import Link from 'next/link';
 
 // Modal.setAppElement('#root');
 const solucoes = () => {
@@ -74,7 +74,11 @@ const solucoes = () => {
               Dê uma olhada no que já desenvolvemos até agora.
             </p>
             <div className="dobra-2__aligncenter">
-              <button className="sol-page__button">ver tecnologias</button>
+              <div className="sol-page__button">
+                <a href="/solucoes" href="#versolucoes">
+                  ver soluções
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -105,9 +109,11 @@ const solucoes = () => {
                   A sua empresa é de outro nicho? Sem problemas. Nossas soluções
                   são personalizáveis para se ajustar às suas demandas!
                 </p>
-                <button className="sol-page__mercados__button">
-                  Ver soluções
-                </button>
+                <div className="sol-page__mercados__button">
+                  <a href="/solucoes" href="#versolucoes">
+                    ver soluções
+                  </a>
+                </div>
               </div>
               <div className="sol-page__mercados__card col-6">
                 <div className="sol-page__mercados__bg">
@@ -130,7 +136,9 @@ const solucoes = () => {
         </div>
         {/* dobra solucoes */}
         <div className="sol-page__solucoes">
-          <h2 className="sol-page__solucoes__header">Soluções</h2>
+          <h2 className="sol-page__solucoes__header" id="versolucoes">
+            Soluções
+          </h2>
           <p className="sol-page__solucoes__paragraph">
             Veja algumas soluções que já foram desenvolvidas pela VP6:
           </p>
@@ -310,9 +318,10 @@ const solucoes = () => {
                 Queremos desenvolver a solução que sua empresa precisa.
               </p>
               <div className="dobra-2__aligncenter">
-                <button className="dobra-cta-solucoes__button">
-                  entrar em contato
-                </button>
+
+                <div className="dobra-cta-solucoes__button">
+                  <Link href="/contato">entrar em contato</Link>
+                </div>
               </div>
             </div>
           </div>

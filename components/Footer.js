@@ -48,10 +48,9 @@ class Footer extends Component {
               <div className="footer__col-3 col-3">
                 <p>Acompanhe a VP6 pela web e fique por dentro das nossas notícias:</p>
                 <div className="footer__col-3__box">
-                  <a className="footer__col-3__box-Rede1" href="http://www.google.com" target="_blank"></a>
-                  <div className="footer__col-3__box-Rede2"></div>
-                  <div className="footer__col-3__box-Rede3"></div>
-                  <div className="footer__col-3__box-Rede4"></div>
+                  <a className="footer__col-3__box-Rede2" href="https://www.linkedin.com/company/vp6/mycompany/?viewAsMember=true" target="_blank"></a>
+                  <a className="footer__col-3__box-Rede3" href="https://www.instagram.com/vp6_consultoria_ti/" target="_blank"></a>
+
                 </div>
               </div>
             </div>

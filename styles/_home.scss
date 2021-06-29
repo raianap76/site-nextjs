@@ -56,24 +56,26 @@
     }
   }
   &__button-faleConosco {
-    margin-top: 20px;
-    color: #ffffff;
-    letter-spacing: 0px;
-    text-transform: uppercase;
-    font-size: 1.8rem;
-    line-height: 4.2rem;
-    width: 205px;
-    height: 50px;
-    background: #4ebbc5 0% 0% no-repeat padding-box;
-    border: 1px solid #4ebbc5;
-    border-radius: 5px;
-    opacity: 1;
+    margin-top: 30px;
     font-family: 'IBM Plex Sans medium';
-    &:hover {
-      background-color: #104288;
-      transform: translateX(0.5rem) scaleX(1.03);
-      box-shadow: 0 1rem 2rem rgba(#161616, 0.2);
-      transition-duration: 0.5s;
+    a {
+      font-size: 1.8rem;
+      line-height: 4.2rem;
+      padding: 10px 30px 10px 30px;
+      text-align: center;
+      color: #ffffff;
+      background: #4ebbc5 0% 0% no-repeat padding-box;
+      border: 1px solid #4ebbc5;
+      border-radius: 5px;
+      opacity: 1;
+      text-transform: uppercase;
+      &:hover {
+        background-color: #104288;
+        transform: translateX(0.5rem);
+        padding: 10px 40px 10px 40px;
+        box-shadow: 0 1rem 2rem rgba(#161616, 0.2);
+        transition-duration: 0.5s;
+      }
     }
   }
 }
@@ -176,23 +178,26 @@
 
   &__button {
     margin-top: 5rem;
-    color: #ffffff;
-    letter-spacing: 0px;
-    text-transform: uppercase;
-    font-size: 1.8rem;
-    line-height: 4.2rem;
-    width: 205px;
-    height: 50px;
-    background: #4ebbc5 0% 0% no-repeat padding-box;
-    border: 1px solid #4ebbc5;
-    border-radius: 5px;
-    opacity: 1;
     font-family: 'IBM Plex Sans medium';
-    &:hover {
-      background-color: #104288;
-      transform: translateX(0.5rem) scaleX(1.03);
-      box-shadow: 0 1rem 2rem rgba(#161616, 0.2);
-      transition-duration: 0.5s;
+    a {
+      font-size: 1.8rem;
+      line-height: 4.2rem;
+      padding: 10px 30px 10px 30px;
+      text-align: center;
+      color: #ffffff;
+      background: #4ebbc5 0% 0% no-repeat padding-box;
+      border: 1px solid #4ebbc5;
+      border-radius: 5px;
+      opacity: 1;
+      text-transform: uppercase;
+      &:hover {
+        color: #4ebbc5;
+        background-color: #a6aed819;
+        transform: translateX(0.5rem);
+        padding: 10px 40px 10px 40px;
+        box-shadow: 0 1rem 2rem rgba(#161616, 0.2);
+        transition-duration: 0.5s;
+      }
     }
   }
 }
@@ -340,23 +345,25 @@
   }
   &__button {
     margin-top: 5rem;
-    color: #ffffff;
-    letter-spacing: 0px;
-    text-transform: uppercase;
-    font-size: 1.8rem;
-    line-height: 4.2rem;
-    width: 205px;
-    height: 50px;
-    background: #4ebbc5 0% 0% no-repeat;
-    border: 1px solid #4ebbc5;
-    border-radius: 5px;
-    opacity: 1;
     font-family: 'IBM Plex Sans medium';
-    &:hover {
-      background-color: #104288;
-      transform: translateX(0.5rem) scaleX(1.03);
-      box-shadow: 0 1rem 2rem rgba(#161616, 0.2);
-      transition-duration: 0.5s;
+    a {
+      font-size: 1.8rem;
+      line-height: 4.2rem;
+      padding: 10px 40px 10px 40px;
+      text-align: center;
+      color: #ffffff;
+      background: #4ebbc5 0% 0% no-repeat padding-box;
+      border: 1px solid #4ebbc5;
+      border-radius: 5px;
+      opacity: 1;
+      text-transform: uppercase;
+      &:hover {
+        background-color: #5467ae;
+        transform: translateX(0.5rem);
+        padding: 10px 55px 10px 55px;
+        box-shadow: 0 1rem 2rem rgba(#161616, 0.2);
+        transition-duration: 0.5s;
+      }
     }
   }
 
@@ -560,7 +567,6 @@
 }
 
 .dobra-cta {
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -569,18 +575,15 @@
     height: 451px;
     background: transparent url('../assets/dobra-cta.png') 0% 0% no-repeat;
     background-size: cover;
-
-
   }
 
-  &__content{
+  &__content {
     padding-top: 10rem;
     width: 554px;
     height: 62px;
     margin: 0 auto;
   }
-  &__title{
-
+  &__title {
     text-align: center;
     font-family: 'IBM Plex Sans';
     font-size: 4.2rem;
@@ -588,10 +591,9 @@
     font-weight: bold;
     font-style: normal;
     letter-spacing: 0px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
-  &__paragraph{
-
+  &__paragraph {
     text-align: center;
     font-family: 'IBM Plex Sans';
     font-size: 2.2rem;
@@ -599,25 +601,31 @@
     font-weight: normal;
     font-style: normal;
     letter-spacing: 0px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
-  &__button{
+  &__button {
     margin-top: 4rem;
-    width: 280px;
-    height: 50px;
-    text-align: center;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #FFFFFF;
-    border-radius: 5px;
-    opacity: 1;
     font-family: 'IBM Plex Sans medium';
-    letter-spacing: 0px;
-    text-transform: uppercase;
-    font-size: 1.8rem;
-    line-height: 4.2rem;
-    color: #5467AE;
+    a {
+      font-size: 1.8rem;
+      line-height: 4.2rem;
+      padding: 10px 30px 10px 30px;
+      text-align: center;
+      color: #5467ae;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border: 1px solid #ffffff;
+      border-radius: 5px;
+      opacity: 1;
+      text-transform: uppercase;
+      &:hover {
+        color: #ffffff;
+        background-color: transparent;
+        transform: translateX(0.5rem);
+        padding: 10px 40px 10px 40px;
+        box-shadow: 0 1rem 2rem rgba(#161616, 0.2);
+        transition-duration: 0.5s;
+      }
+    }
   }
-
-
 }
