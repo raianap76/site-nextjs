@@ -17,12 +17,20 @@
     background-size: 70% 80%;
     background-position: top right;
     background-repeat: no-repeat;
-    z-index: 9999;
+    z-index: 2;
     position: absolute;
     top: 15rem;
     right: 0;
 
+    @media (max-width: 1400px) {
+      height: 1067px;
+      background-size: 66% 90%;
+    background-position: right;
+
+    }
+
     @media (min-width: 1400px) {
+      height: 1467px;
       background-size: cover;
     }
   }
@@ -167,6 +175,7 @@
     }
   }
   form#formset {
+    z-index: 3;
     text-align: left;
   }
   form#formset fieldset {

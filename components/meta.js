@@ -7,7 +7,7 @@ const Meta = ({ title, keywords, description }) => {
       <meta name='keywords' content={keywords} />
       <meta name='description' content={description} />
       <meta charSet='utf-8' />
-      <link rel='icon' href='/logo-vp6.svg' />
+      <link rel='icon' href='/favicon.ico'/>
       <title>{title}</title>
       <script src="https://www.google.com/recaptcha/api.js"></script>
     </Head>
@@ -15,7 +15,7 @@ const Meta = ({ title, keywords, description }) => {
 }
 
 Meta.defaultProps = {
-  title: 'VP6 Consult',
+  title: 'VP6 IT Consulting',
   keywords: 'transformação digital',
   description: 'site vp6 consultoria',
 }
