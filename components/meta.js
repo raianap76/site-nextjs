@@ -10,6 +10,7 @@ const Meta = ({ title, keywords, description }) => {
       <link rel='icon' href='/favicon.ico'/>
       <title>{title}</title>
       <script src="https://www.google.com/recaptcha/api.js"></script>
+
     </Head>
   )
 }
