@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 const Nav = () => {
+
   return (
     <div className="container pt-4 pb-4">
       <div className="navbar">
