@@ -1,6 +1,5 @@
 import Link from 'next/link';
 
-
 const Nav = () => {
   return (
     <div className="container pt-4 pb-4">
@@ -26,8 +25,11 @@ const Nav = () => {
           <Link href="/tecnologia">Tecnologia</Link>
           <Link href="/solucoes">Soluções</Link>
 
-
-          <button className="button-contato"><Link href="/contato">Contato</Link></button>
+          {/* <div className="button-contato-center"> */}
+            <button className="button-contato">
+              <Link href="/contato">Contato</Link>
+            </button>
+          {/* </div> */}
         </div>
       </div>
     </div>
