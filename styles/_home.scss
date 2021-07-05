@@ -5,6 +5,14 @@
   background-position: center;
   // position: relative;  para versão mobile atrabalha
 
+  @include respond(phone) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 800px;
+    background-image: url('../assets/bg-mobile.svg');
+  }
+
   &__content-header {
     padding-top: 9rem;
     text-align: left;
@@ -23,6 +31,13 @@
 
     font-weight: bold;
     font-style: normal;
+    @include respond(phone) {
+      width: 320px;
+      height: 91px;
+      margin: 0 auto;
+      font-size: 3.8rem;
+      line-height: 4.2rem;
+    }
   }
   &__text-box-2 {
     font-size: 3rem;
@@ -35,6 +50,14 @@
 
     font-weight: bold;
     font-style: normal;
+    @include respond(phone) {
+      width: 320px;
+      height: 60px;
+      margin: 0 auto;
+      font-size: 2.4rem;
+      line-height: 2.8rem;
+      padding-top: 1rem;
+    }
   }
   &__paragraph {
     width: 503px;
@@ -44,6 +67,11 @@
     letter-spacing: 0px;
     color: #f7f7f7;
     opacity: 1;
+    @include respond(phone) {
+      width: 320px;
+      margin: 0 auto;
+      margin-top: 4rem;
+    }
 
     &-text {
       font-size: 1.8rem;
@@ -51,7 +79,12 @@
       letter-spacing: 0px;
       font-weight: normal;
       font-style: normal;
+      @include respond(phone) {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+      }
     }
+
     &-text-2 {
     }
   }
@@ -104,7 +137,12 @@
   &__paragraph {
     margin: 0 auto;
     width: 691px;
-    height: 45px;
+
+    @include respond(phone) {
+      width: 320px;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+    }
 
     &-text {
       letter-spacing: 0px;
@@ -126,6 +164,10 @@
     border-radius: 5px;
     margin: 0 auto;
     padding: 2rem;
+
+    @include respond(phone) {
+      margin-bottom: 3rem !important;
+    }
 
     &-head {
       float: left;
@@ -205,6 +247,10 @@
 .dobra-3 {
   padding-top: 9rem;
   padding-bottom: 8rem;
+  @include respond(phone) {
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+  }
   font-family: 'IBM Plex Sans';
   background: #ffffff 0% 0% no-repeat padding-box;
 
@@ -236,18 +282,41 @@
     flex-wrap: wrap;
     margin: 0 auto;
 
+    @include respond(phone) {
+      width: 485px;
+      height: 350px;
+      // display: flex;
+      // flex-wrap: nowrap;
+      // width: 100%;
+      // justify-content:center;
+      // flex-direction: column;
+      // align-items: center;
+    }
+
     &-itensCenter {
       margin: 0 auto;
       display: flex;
       flex: wrap;
+      @include respond(phone) {
+        display: flex;
+        flex-wrap: wrap;
+      }
     }
   }
 }
 
 .dobra-4 {
-  position: relative;
   margin-top: 8rem;
+  position: relative;
 
+  &__center {
+    @include respond(phone) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
   &__title {
     padding-top: 8rem;
     text-align: left;
@@ -258,11 +327,14 @@
     font-style: normal;
     letter-spacing: 0px;
     color: #f7f7f7;
+    @include respond(phone) {
+      text-align: center;
+    }
   }
   &__paragraph {
     width: 557px;
     height: 20px;
-    text-align: left;
+    text-align: center;
     font-family: 'IBM Plex Sans';
     font-size: 1.6rem;
     line-height: 2.4rem;
@@ -271,6 +343,14 @@
     letter-spacing: 0px;
     color: #f7f7f7;
     margin-bottom: 8rem;
+
+    @include respond(phone) {
+      width: 320px;
+      height: 60px;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 8rem;
+    }
   }
   &__solucoes {
     width: 470px;
@@ -279,60 +359,95 @@
     box-shadow: 0px 0px 6px #03297633;
     border-radius: 5px;
     padding: 1rem;
+    display: flex;
+    flex: wrap;
+    flex-direction: row;
     cursor: pointer;
+    @include respond(phone) {
+      width: 320px;
+    }
 
     &-empr {
-      float: left;
       width: 42px;
       height: 42px;
       margin-right: 1.5rem;
       background: transparent url('../assets/orçamento-empresaria.svg') 0% 0%
         no-repeat padding-box;
+      background-size: cover;
+      @include respond(phone) {
+        background-size: 90% 120%;
+
+        margin-right: 1rem;
+      }
     }
     &-civil {
-      float: left;
       width: 42px;
       height: 42px;
       margin-right: 1.5rem;
       background: transparent url('../assets/sistema-construcao-civil.svg') 0%
         0% no-repeat padding-box;
+      background-size: cover;
+      @include respond(phone) {
+        background-size: 90% 120%;
+
+        margin-right: 1rem;
+      }
     }
     &-gerencial {
-      float: left;
       width: 42px;
       height: 42px;
       margin-right: 1.5rem;
       background: transparent url('../assets/sistema-informação-gerencial.svg')
         0% 0% no-repeat padding-box;
+
+      background-size: cover;
+      @include respond(phone) {
+        background-size: 90% 120%;
+
+        margin-right: 1rem;
+      }
     }
     &-relatorio {
-      float: left;
       width: 42px;
       height: 42px;
       margin-right: 1.5rem;
       background: transparent url('../assets/automatizacao-relatorio.svg') 0% 0%
         no-repeat padding-box;
+      background-size: cover;
+      @include respond(phone) {
+        background-size: 90% 120%;
+
+        margin-right: 1rem;
+      }
     }
     &-cobranca {
-      float: left;
       width: 42px;
       height: 42px;
       margin-right: 1.5rem;
       background: transparent url('../assets/gestao-setor-cobranca.svg') 0% 0%
         no-repeat padding-box;
+      background-size: cover;
+      @include respond(phone) {
+        background-size: 90% 120%;
+
+        margin-right: 1rem;
+      }
     }
 
     &-conciliacao {
-      float: left;
       width: 42px;
       height: 42px;
       margin-right: 1.5rem;
       background: transparent url('../assets/conciliacaobancaria.svg') 0% 0%
         no-repeat padding-box;
+      background-size: cover;
+      @include respond(phone) {
+        background-size: 90% 120%;
+        margin-right: 1rem;
+      }
     }
 
     &-p {
-      float: left;
       margin-top: 0.5rem;
       text-align: left;
       font-family: 'IBM Plex Sans medium';
@@ -341,6 +456,11 @@
       font-weight: normal;
       letter-spacing: 0px;
       color: #5467ae;
+
+      @include respond(phone) {
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+      }
     }
   }
   &__button {
@@ -380,21 +500,31 @@
       height: 967px;
       background: url('../assets/man.png') no-repeat center center;
       background-size: cover;
+      display: block;
+      @include respond(phone) {
+        display: none;
+      }
     }
   }
 }
 .dobra-5 {
   margin-top: 3rem;
-  height: 617px;
+  height: 700px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  @include respond(phone) {
+    height: 1100px;
+  }
 
   &__clientes {
     width: 330px;
     margin-right: 6rem;
 
+    @include respond(phone) {
+      margin-right: 0rem;
+    }
     &-title {
       text-align: left;
       font-family: 'IBM Plex Sans';
@@ -404,6 +534,9 @@
       font-style: normal;
       letter-spacing: 0px;
       color: #0157a5;
+      @include respond(phone) {
+        text-align: center;
+      }
     }
     &-paragraph {
       text-align: left;
@@ -415,6 +548,10 @@
       letter-spacing: 0px;
       color: #0157a5;
       margin-bottom: 8rem;
+      @include respond(phone) {
+        margin-bottom: 1rem;
+        text-align: center;
+      }
     }
   }
   &__painel {
@@ -423,6 +560,12 @@
     display: flex;
     flex-wrap: wrap;
 
+    @include respond(phone) {
+      align-items: stretch;
+      width: 360px;
+      height: 860px;
+    }
+
     &-AppPonto {
       width: 175px;
       height: 41px;
@@ -430,15 +573,27 @@
       background-size: cover;
       background-position: center;
       margin-right: 3.5rem;
+      @include respond(phone) {
+        background-size: 70% 70%;
+        background-repeat: no-repeat;
+        margin-right: 2rem;
+        margin-left: -2rem;
+      }
     }
     &-Inter {
-      width: 155px;
-      height: 155px;
+      width: 150px;
+      height: 50px;
       background-image: url('../assets/Banco Inter.png');
       background-size: cover;
       background-position: top;
       margin-right: 3.5rem;
-      margin-top: -60px;
+      margin-top: -4px;
+      @include respond(phone) {
+        background-size: 70% 70%;
+        background-repeat: no-repeat;
+        margin-right: 0px;
+        margin-top: -2px;
+      }
     }
     &-Carapreta {
       width: 175px;
@@ -447,6 +602,12 @@
       background-size: cover;
       background-position: center;
       margin-right: 3.5rem;
+      @include respond(phone) {
+        background-size: 70% 70%;
+        background-repeat: no-repeat;
+        margin-right: 2rem;
+        margin-left: -2rem;
+      }
     }
     &-Cea {
       width: 145px;
@@ -454,17 +615,29 @@
       background-image: url('../assets/Construtora C&A.png');
       background-size: cover;
       background-position: center;
-
       margin-top: -60px;
+      @include respond(phone) {
+        background-size: 80% 80%;
+        background-repeat: no-repeat;
+        margin-right: 0px;
+        margin-top: -60px;
+      }
     }
     &-Cyrela {
-      width: 175px;
-      height: 100px;
+      width: 174px;
+      height: 41px;
       background-image: url('../assets/Cyrela.png');
       background-size: cover;
       background-position: center;
       margin-right: 3.5rem;
-      margin-top: -4rem;
+      margin-top: -2rem;
+      @include respond(phone) {
+        background-size: 70% 70%;
+        background-repeat: no-repeat;
+        margin-right: -2rem;
+        margin-left: -2.5rem;
+        margin-top: -4rem;
+      }
     }
 
     &-Direional {
@@ -474,6 +647,12 @@
       background-size: cover;
       background-position: center;
       margin-right: 3.5rem;
+      @include respond(phone) {
+        background-size: 70% 70%;
+        background-repeat: no-repeat;
+        margin-right: 0px;
+        margin-top: -2.3rem;
+      }
     }
     &-Fricasa {
       width: 131px;
@@ -483,6 +662,11 @@
       background-position: center;
       margin-right: 3.5rem;
       margin-top: -1rem;
+      @include respond(phone) {
+        background-size: 80% 80%;
+        background-repeat: no-repeat;
+        margin-right: 2rem;
+      }
     }
     &-Indigo {
       width: 164px;
@@ -491,6 +675,11 @@
       background-size: cover;
       background-position: center;
       margin-top: -1rem;
+      @include respond(phone) {
+        background-size: 80% 80%;
+        background-repeat: no-repeat;
+        margin-right: 0px;
+      }
     }
     &-JcContijo {
       width: 140px;
@@ -500,6 +689,11 @@
       background-position: center;
       margin-right: 5.5rem;
       margin-top: -2.5rem;
+      @include respond(phone) {
+        background-size: 80% 80%;
+        background-repeat: no-repeat;
+        margin-right: 2rem;
+      }
     }
     &-Mrv {
       width: 141px;
@@ -509,6 +703,11 @@
       background-position: center;
 
       margin-right: 5.5rem;
+      @include respond(phone) {
+        background-size: 80% 80%;
+        background-repeat: no-repeat;
+        margin-right: 0px;
+      }
     }
     &-Patrimar {
       width: 174px;
@@ -518,6 +717,11 @@
       background-position: center;
 
       margin-right: 5.5rem;
+      @include respond(phone) {
+        background-size: 80% 80%;
+        background-repeat: no-repeat;
+        margin-right: 2rem;
+      }
     }
     &-Pif-Paf {
       width: 110px;
@@ -526,6 +730,11 @@
       background-size: cover;
       background-position: center;
       margin-top: -1rem;
+      @include respond(phone) {
+        background-size: 80% 80%;
+        background-repeat: no-repeat;
+        margin-right: 0px;
+      }
     }
     &-Plano {
       width: 190px;
@@ -534,6 +743,11 @@
       background-size: cover;
       background-position: center;
       margin-right: 3.5rem;
+      @include respond(phone) {
+        background-size: 80% 80%;
+        background-repeat: no-repeat;
+        margin-right: 1rem;
+      }
     }
     &-Plena {
       width: 140px;
@@ -543,6 +757,11 @@
       background-position: center;
       margin-right: 3.5rem;
       margin-top: -2.5rem;
+      @include respond(phone) {
+        background-size: 80% 80%;
+        background-repeat: no-repeat;
+        margin-right: 0px;
+      }
     }
 
     &-Precon {
@@ -553,6 +772,11 @@
       background-position: center;
       margin-top: -1.5rem;
       margin-right: 3.5rem;
+      @include respond(phone) {
+        background-size: 80% 80%;
+        background-repeat: no-repeat;
+        margin-right: 2rem;
+      }
     }
 
     &-Tial {
@@ -562,6 +786,11 @@
       background-size: cover;
       background-position: center;
       margin-top: -1.5rem;
+      @include respond(phone) {
+        background-size: 80% 80%;
+        background-repeat: no-repeat;
+        margin-right: 0px;
+      }
     }
   }
 }
@@ -575,6 +804,12 @@
     height: 451px;
     background: transparent url('../assets/dobra-cta.png') 0% 0% no-repeat;
     background-size: cover;
+
+    @include respond(phone) {
+      background: transparent url('../assets/dobra-cta-mobile.png') 0% 0%
+        no-repeat;
+      background-size: cover;
+    }
   }
 
   &__content {
@@ -582,6 +817,9 @@
     width: 554px;
     height: 62px;
     margin: 0 auto;
+    @include respond(phone) {
+      width: 320px;
+    }
   }
   &__title {
     text-align: center;

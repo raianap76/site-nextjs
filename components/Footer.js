@@ -7,8 +7,8 @@ class Footer extends Component {
         <div className="line-header-footer"></div>
         <footer className="footer">
           <div className="container">
-            <div className="row">
-              <div className="footer__col-1 col-4">
+            <div className="footer__alignItemns">
+              <div className="footer__col-1">
                 <div className="footer__col-1__logo"></div>
                 <div className="footer__col-1__box mt-4">
                   <div className="footer__col-1__box__map"></div>
@@ -26,7 +26,7 @@ class Footer extends Component {
                 </div>
 
               </div>
-              <div className="footer__col-2 col-5">
+              <div className="footer__col-2">
                 <ul className="footer__col-2__menu">
                   <li><a href="/">Home</a></li>
                   <li><a href="/sobre">Sobre</a></li>
@@ -45,7 +45,7 @@ class Footer extends Component {
                 </div>
                 </div>
               </div>
-              <div className="footer__col-3 col-3">
+              <div className="footer__col-3">
                 <p>Acompanhe a VP6 pela web e fique por dentro das nossas notícias:</p>
                 <div className="footer__col-3__box">
                   <a className="footer__col-3__box-Rede2" href="https://www.linkedin.com/company/vp6/mycompany/?viewAsMember=true" target="_blank"></a>
@@ -54,7 +54,7 @@ class Footer extends Component {
                 </div>
               </div>
             </div>
-          </div>
+            </div>
         </footer>
       </div>
     );

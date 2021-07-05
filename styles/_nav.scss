@@ -85,20 +85,20 @@
 .navbar > #navbar-check {
   display: none;
 }
-  // @media (min-width: 800px){
-  //   .container{
-  //     width: 100%!important;
-  //     margin: 0px !important;
-  //     padding: 0px !important;
-  //   }
-  // }
 
 @media (max-width: 800px) {
-  .container{
-        max-width: 100%!important;
-        margin: 0px !important;
-        padding: 0px !important;
-      }
+  .navbar {
+    height: 80px;
+  }
+
+  .log-nav {
+    margin-left: 5px;
+  }
+  .teste > .container {
+    max-width: 100% !important;
+    margin: 0px !important;
+    padding: 0px !important;
+  }
   .button-contato {
     width: 90%;
     height: 40px;
@@ -109,6 +109,8 @@
     }
   }
   .navbar > .navbar-btn {
+    margin-top:5px;
+    margin-right: 10px;
     display: inline-block;
     position: absolute;
     right: 0px;
@@ -116,9 +118,9 @@
   }
   .navbar > .navbar-btn > label {
     display: inline-block;
-    width: 50px;
-    height: 50px;
-    padding: 13px;
+    width: 58px;
+    height: 55px;
+    padding: 19px;
   }
   .navbar > .navbar-btn > label:hover,
   .navbar #navbar-check:checked ~ .navbar-btn > label {
@@ -128,7 +130,7 @@
     display: block;
     width: 25px;
     height: 10px;
-    border-top: 2px solid #4ebbc5;
+    border-top: 3px solid #4ebbc5;
   }
   .navbar > .navbar-links {
     position: absolute;
@@ -142,7 +144,7 @@
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
-    top: 50px;
+    top: 80px;
     left: 0px;
   }
   .navbar > .navbar-links > a {

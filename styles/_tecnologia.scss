@@ -66,6 +66,8 @@
   &__dobra-3 {
     padding-top: 12rem;
     padding-bottom: 12rem;
+
+
     font-family: 'IBM Plex Sans';
     background: #f7f7f7 0% 0% no-repeat padding-box;
 
@@ -93,10 +95,13 @@
 
     &__painel {
       width: 990px;
-
       display: flex;
       flex-wrap: wrap;
       margin: 0 auto;
+      @include respond(phone) {
+        width: 360px;
+        height: 860px;
+      }
 
       &-card {
         display: flex;
@@ -111,6 +116,12 @@
         opacity: 1;
         margin-right: 3rem;
         margin-bottom: 2rem;
+        @include respond(phone) {
+          width: 160px;
+          height: 200px;
+          margin-right: 1.5rem;
+          margin-bottom: 2rem;
+        }
 
         p {
           margin-top: 1.5rem;
@@ -119,6 +130,10 @@
           line-height: 2.2rem;
           font-size: 2.8rem;
           font-family: 'IBM Plex Sans medium';
+          @include respond(phone) {
+            line-height: 2.8rem;
+            font-size: 2.4rem;
+          }
         }
       }
 
@@ -134,6 +149,11 @@
         background-image: url('../assets/python.png');
         background-size: cover;
         background-position: center;
+        @include respond(phone) {
+          width: 76px;
+          height: 76px;
+          background-image: url('../assets/tecnologias-mobile/python.png');
+        }
       }
 
       &-logoNode {
@@ -142,6 +162,12 @@
         background-image: url('../assets/node.png');
         background-size: cover;
         background-position: center;
+
+        @include respond(phone) {
+          width: 76px;
+          height: 76px;
+          background-image: url('../assets/tecnologias-mobile/node.png');
+        }
       }
       &-logoSql {
         width: 150px;
@@ -149,6 +175,11 @@
         background-image: url('../assets/sql.png');
         background-size: cover;
         background-position: center;
+        @include respond(phone) {
+          width: 76px;
+          height: 76px;
+          background-image: url('../assets/tecnologias-mobile/sql.png');
+        }
       }
       &-logoAws {
         width: 150px;
@@ -156,6 +187,11 @@
         background-image: url('../assets/aws.png');
         background-size: cover;
         background-position: center;
+        @include respond(phone) {
+          width: 76px;
+          height: 76px;
+          background-image: url('../assets/tecnologias-mobile/aws.png');
+        }
       }
       &-logoReact {
         width: 150px;
@@ -163,6 +199,11 @@
         background-image: url('../assets/react.png');
         background-size: cover;
         background-position: center;
+        @include respond(phone) {
+          width: 76px;
+          height: 76px;
+          background-image: url('../assets/tecnologias-mobile/react.png');
+        }
       }
       &-logoAngular {
         width: 150px;
@@ -170,6 +211,11 @@
         background-image: url('../assets/angular.png');
         background-size: cover;
         background-position: center;
+        @include respond(phone) {
+          width: 76px;
+          height: 76px;
+          background-image: url('../assets/tecnologias-mobile/angular.png');
+        }
       }
       &-logoPanda {
         width: 150px;
@@ -177,6 +223,11 @@
         background-image: url('../assets/panda.png');
         background-size: cover;
         background-position: center;
+        @include respond(phone) {
+          width: 76px;
+          height: 76px;
+          background-image: url('../assets/tecnologias-mobile/pandas.png');
+        }
       }
       &-logoMysql {
         width: 150px;
@@ -198,6 +249,11 @@
         background-image: url('../assets/azure.png');
         background-size: cover;
         background-position: center;
+        @include respond(phone) {
+          width: 76px;
+          height: 76px;
+          background-image: url('../assets/tecnologias-mobile/azure.png');
+        }
       }
       &-logoDigitalOCean {
         width: 150px;

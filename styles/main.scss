@@ -1,3 +1,4 @@
+@import "./mixins";
 @import "./fonts";
 @import "./nav";
 @import "./home";
@@ -7,6 +8,7 @@
 @import "./tecnologia";
 @import "./contato";
 @import "./solucoes";
+
 html,
 body {
   padding: 0;

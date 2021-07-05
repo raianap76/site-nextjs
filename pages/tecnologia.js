@@ -63,7 +63,7 @@ const tecnologia = () => {
 
               <div className="tec-page__dobra-3__painel-card">
                 <div className="tec-page__dobra-3__painel-logoPanda"></div>
-                <p>Panda</p>
+                <p>Pandas</p>
               </div>
 
               <div className="tec-page__dobra-3__painel-card">

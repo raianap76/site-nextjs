@@ -3,6 +3,7 @@ import Link from 'next/link';
 const Nav = () => {
 
   return (
+    <div className="teste">
     <div className="container pt-4 pb-4">
       <div className="navbar">
         <input type="checkbox" id="navbar-check" />
@@ -33,6 +34,7 @@ const Nav = () => {
           {/* </div> */}
         </div>
       </div>
+    </div>
     </div>
   );
 };

@@ -193,21 +193,25 @@ export default function Home() {
                 <div className="tec-page__dobra-3__painel-logoAws"></div>
                 <p>AWS</p>
               </div>
-              <div className="dobra-3__painel-itensCenter">
-                <div className="tec-page__dobra-3__painel-card">
-                  <div className="tec-page__dobra-3__painel-logoReact"></div>
-                  <p>React</p>
-                </div>
 
-                <div className="tec-page__dobra-3__painel-card">
-                  <div className="tec-page__dobra-3__painel-logoAngular"></div>
-                  <p>Angular</p>
-                </div>
+              <div className="tec-page__dobra-3__painel-card">
+                <div className="tec-page__dobra-3__painel-logoReact"></div>
+                <p>React</p>
+              </div>
 
-                <div className="tec-page__dobra-3__painel-card">
-                  <div className="tec-page__dobra-3__painel-logoPanda"></div>
-                  <p>Panda</p>
-                </div>
+              <div className="tec-page__dobra-3__painel-card">
+                <div className="tec-page__dobra-3__painel-logoAngular"></div>
+                <p>Angular</p>
+              </div>
+
+              <div className="tec-page__dobra-3__painel-card">
+                <div className="tec-page__dobra-3__painel-logoPanda"></div>
+                <p>Pandas</p>
+              </div>
+
+              <div className="tec-page__dobra-3__painel-card">
+                <div className="tec-page__dobra-3__painel-logoAzure"></div>
+                <p>Azure</p>
               </div>
             </div>
           </div>
@@ -228,61 +232,63 @@ export default function Home() {
                 empresa nos mais diversos segmentos.{' '}
                 <b>Veja algumas soluções que já desenvolvemos:</b>
               </p>
-              <div
-                className="dobra-4__solucoes"
-                onClick={() => setModalOrcamento(true)}
-              >
-                <div className="dobra-4__solucoes-empr"></div>
-                <p className="dobra-4__solucoes-p">Orçamento empresarial</p>
-              </div>
-              <div
-                className="dobra-4__solucoes mt-5"
-                onClick={() => setModalConstrucao(true)}
-              >
-                <div className="dobra-4__solucoes-civil"></div>
-                <p className="dobra-4__solucoes-p">
-                  Sistema para Construção Civil
-                </p>
-              </div>
-              <div
-                className="dobra-4__solucoes mt-5"
-                onClick={() => setModalGerencial(true)}
-              >
-                <div className="dobra-4__solucoes-gerencial"></div>
-                <p className="dobra-4__solucoes-p">
-                  Sistema de Informação Gerencial
-                </p>
-              </div>
+              <div className="dobra-4__center">
+                <div
+                  className="dobra-4__solucoes"
+                  onClick={() => setModalOrcamento(true)}
+                >
+                  <div className="dobra-4__solucoes-empr"></div>
+                  <p className="dobra-4__solucoes-p">Orçamento empresarial</p>
+                </div>
+                <div
+                  className="dobra-4__solucoes mt-5"
+                  onClick={() => setModalConstrucao(true)}
+                >
+                  <div className="dobra-4__solucoes-civil"></div>
+                  <p className="dobra-4__solucoes-p">
+                    Sistema para Construção Civil
+                  </p>
+                </div>
+                <div
+                  className="dobra-4__solucoes mt-5"
+                  onClick={() => setModalGerencial(true)}
+                >
+                  <div className="dobra-4__solucoes-gerencial"></div>
+                  <p className="dobra-4__solucoes-p">
+                    Sistema de Informação Gerencial
+                  </p>
+                </div>
 
-              <div
-                className="dobra-4__solucoes mt-5"
-                onClick={() => setModalAutomatizacao(true)}
-              >
-                <div className="dobra-4__solucoes-relatorio"></div>
-                <p className="dobra-4__solucoes-p">
-                  Automatização de relatórios
-                </p>
-              </div>
+                <div
+                  className="dobra-4__solucoes mt-5"
+                  onClick={() => setModalAutomatizacao(true)}
+                >
+                  <div className="dobra-4__solucoes-relatorio"></div>
+                  <p className="dobra-4__solucoes-p">
+                    Automatização de relatórios
+                  </p>
+                </div>
 
-              <div
-                className="dobra-4__solucoes mt-5"
-                onClick={() => setModalGestao(true)}
-              >
-                <div className="dobra-4__solucoes-cobranca"></div>
-                <p className="dobra-4__solucoes-p">
-                  Gestão para setor de cobrança
-                </p>
-              </div>
+                <div
+                  className="dobra-4__solucoes mt-5"
+                  onClick={() => setModalGestao(true)}
+                >
+                  <div className="dobra-4__solucoes-cobranca"></div>
+                  <p className="dobra-4__solucoes-p">
+                    Gestão para setor de cobrança
+                  </p>
+                </div>
 
-              <div
-                className="dobra-4__solucoes mt-5"
-                onClick={() => setModalConciliacao(true)}
-              >
-                <div className="dobra-4__solucoes-conciliacao"></div>
-                <p className="dobra-4__solucoes-p">Conciliação bancária</p>
-              </div>
-              <div className="dobra-4__button">
-                <Link href="/solucoes">Saiba Mais</Link>
+                <div
+                  className="dobra-4__solucoes mt-5"
+                  onClick={() => setModalConciliacao(true)}
+                >
+                  <div className="dobra-4__solucoes-conciliacao"></div>
+                  <p className="dobra-4__solucoes-p">Conciliação bancária</p>
+                </div>
+                <div className="dobra-4__button">
+                  <Link href="/solucoes">Saiba Mais</Link>
+                </div>
               </div>
             </div>
           </div>
@@ -330,9 +336,7 @@ export default function Home() {
               </p>
               <div className="dobra-2__aligncenter">
                 <div className="dobra-cta__button">
-                  <Link href="/contato">
-                    seja nosso próximo case
-                  </Link>
+                  <Link href="/contato">seja nosso próximo case</Link>
                 </div>
               </div>
             </div>
