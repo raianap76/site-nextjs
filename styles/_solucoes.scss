@@ -741,6 +741,25 @@
 .solucoes__modal {
   font-family: 'IBM Plex Sans';
 
+  @include respond(phone) {
+    .col-6 {
+      width: 100% !important;
+    }
+  }
+
+  &__mobile {
+    display: none;
+    @include respond(phone) {
+      display: block;
+    }
+  }
+  &__desktop {
+    display: block;
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
   &__cardHeader {
     display: flex;
     flex-direction: row;
@@ -763,6 +782,10 @@
       font-weight: bold;
       letter-spacing: 0px;
       color: #0157a5 !important;
+      @include respond(phone) {
+        margin-top: 0rem;
+        width: 220px;
+      }
     }
     &-paragraph {
       width: 593px;
@@ -773,6 +796,12 @@
       font-weight: normal;
       letter-spacing: 0px;
       color: #5467ae;
+      @include respond(phone) {
+
+        max-width: 320px;
+        margin: 0 auto;
+        margin-top:3rem;
+      }
     }
     &__construcao {
       &-rodape {
@@ -810,14 +839,21 @@
     }
   }
   &__orcamentoModal {
-    margin-right: -6rem;
-    margin-left: 5rem;
     width: 486px;
     height: 396px;
     background-image: url('../assets/modal-orcamento.png');
     background-size: 89% 89%;
     background-repeat: no-repeat;
     background-position: top right;
+
+    @include respond(phone) {
+      width: 370px;
+      height: 296px;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+
+    }
   }
   &__automatizacaoModal {
     margin-right: -6rem;
@@ -899,14 +935,19 @@ ul.solucoes__modal__ul {
   line-height: 2.8rem;
   color: #4ebbc5;
   padding-left: 0rem;
+  @include respond(phone) {
+    max-width: 320px;
+    margin:0 auto;
+    margin-top:2rem;
+  }
 }
 .modalOrcamento {
   backface-visibility: hidden;
   background-color: #ffff;
   position: absolute;
   top: 50%;
-  overflow-y: auto;
-  // width:80vw;
+  overflow-y: auto !important;
+  max-height: 85vh; // <-- This sets the height
   left: 50%;
   right: auto;
   bottom: auto;
@@ -914,6 +955,11 @@ ul.solucoes__modal__ul {
   transform: translate(-50%, -50%);
   border-radius: 10px;
   padding: 60px 60px 60px 60px;
+
+  @include respond(phone) {
+    padding: 20px 20px 20px 20px;
+
+  }
 }
 .modalConstrucao {
   backface-visibility: hidden;
@@ -948,4 +994,9 @@ ul.solucoes__modal__ul {
   transform: translate(-50%, -50%);
   border-radius: 10px;
   padding: 60px 60px 60px 60px;
+}
+
+.ReactModal__Overlay {
+  padding-left: 0px;
+  padding-right: 0px;
 }

@@ -21,7 +21,7 @@ const solucoes = () => {
       transform: 'translate(-50%, -50%)',
 
       borderRadius: '10px',
-      padding: '60px 60px 60px 60px',
+
       // overlfow: 'hidden',
     },
     overlay: {
@@ -38,7 +38,7 @@ const solucoes = () => {
       transform: 'translate(-50%, -50%)',
 
       borderRadius: '10px',
-      padding: '60px 60px 60px 60px',
+
       height: '740px', // <-- This sets the height
       overlfowY: 'scroll', // <-- This tells the modal to scrol
     },
@@ -341,7 +341,13 @@ const solucoes = () => {
                   <h2 className="solucoes__modal__cardHeader-header">
                     Orçamento empresarial
                   </h2>
+
                 </div>
+                <div className="solucoes__modal__mobile">
+                    <div className="col-6">
+                      <div className="solucoes__modal__orcamentoModal"></div>
+                    </div>
+                  </div>
                 <p className="solucoes__modal__cardHeader-paragraph">
                   O nosso sistema de orçamento empresarial automatiza processos
                   para que a sua equipe tenha um ganho operacional
@@ -366,8 +372,10 @@ const solucoes = () => {
                   <li className="modal-li">Dentre outros.</li>
                 </ul>
               </div>
-              <div className="col-6">
-                <div className="solucoes__modal__orcamentoModal"></div>
+              <div className="solucoes__modal__desktop col-6">
+
+                  <div className="solucoes__modal__orcamentoModal"></div>
+
               </div>
             </div>
           </div>
