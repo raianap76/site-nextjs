@@ -38,9 +38,6 @@ const solucoes = () => {
       transform: 'translate(-50%, -50%)',
 
       borderRadius: '10px',
-
-      height: '740px', // <-- This sets the height
-      overlfowY: 'scroll', // <-- This tells the modal to scrol
     },
     overlay: {
       background: '#000E2B80',
@@ -341,13 +338,12 @@ const solucoes = () => {
                   <h2 className="solucoes__modal__cardHeader-header">
                     Orçamento empresarial
                   </h2>
-
                 </div>
                 <div className="solucoes__modal__mobile">
-                    <div className="col-6">
-                      <div className="solucoes__modal__orcamentoModal"></div>
-                    </div>
+                  <div className="col-6">
+                    <div className="solucoes__modal__orcamentoModal"></div>
                   </div>
+                </div>
                 <p className="solucoes__modal__cardHeader-paragraph">
                   O nosso sistema de orçamento empresarial automatiza processos
                   para que a sua equipe tenha um ganho operacional
@@ -373,9 +369,7 @@ const solucoes = () => {
                 </ul>
               </div>
               <div className="solucoes__modal__desktop col-6">
-
-                  <div className="solucoes__modal__orcamentoModal"></div>
-
+                <div className="solucoes__modal__orcamentoModal"></div>
               </div>
             </div>
           </div>
@@ -389,6 +383,7 @@ const solucoes = () => {
         <Modal
           isOpen={modalAutomatizacao}
           style={customStyles}
+          className="modalOrcamento"
           onRequestClose={() => {
             setModalAutomatizacao(false);
           }}
@@ -403,6 +398,12 @@ const solucoes = () => {
                     Automatização de relatórios
                   </h2>
                 </div>
+                <div className="solucoes__modal__mobile">
+                  <div className="col-6">
+                    <div className="solucoes__modal__automatizacaoModal"></div>
+                  </div>
+                </div>
+
                 <p className="solucoes__modal__cardHeader-paragraph">
                   Se na sua empresa é preciso despender horas de trabalho dos
                   colaboradores para gerar relatórios, essa solução foi feita
@@ -417,7 +418,7 @@ const solucoes = () => {
                   produtividade e reduza custos.
                 </p>
               </div>
-              <div className="col-6">
+              <div className="solucoes__modal__desktop col-6">
                 <div className="solucoes__modal__automatizacaoModal"></div>
               </div>
             </div>
@@ -446,6 +447,11 @@ const solucoes = () => {
                     Sistema de Informação Gerencial
                   </h2>
                 </div>
+                <div className="solucoes__modal__mobile">
+                  <div className="col-6">
+                    <div className="solucoes__modal__gerencialModal"></div>
+                  </div>
+                </div>
                 <p className="solucoes__modal__cardHeader-paragraph">
                   Ferramenta para investir em Business Intelligence e melhorar o
                   controle dos processos da sua empresa. Nós geramos uma série
@@ -470,7 +476,7 @@ const solucoes = () => {
                   efetiva dos seus dados e torne suas decisões mais assertivas!
                 </p>
               </div>
-              <div className="col-5 col-12-m col-12-s">
+              <div className="solucoes__modal__desktop col-6">
                 <div className="solucoes__modal__gerencialModal"></div>
               </div>
             </div>
@@ -536,6 +542,7 @@ const solucoes = () => {
         <Modal
           isOpen={modalGestao}
           style={customStyles}
+          className="modalGerencial"
           onRequestClose={() => {
             setModalGestao(false);
           }}
@@ -549,6 +556,12 @@ const solucoes = () => {
                   <h2 className="solucoes__modal__cardHeader-header">
                     Gestão para setor de cobrança
                   </h2>
+                </div>
+
+                <div className="solucoes__modal__mobile">
+                  <div className="col-6">
+                    <div className="solucoes__modal__cobrancaModal"></div>
+                  </div>
                 </div>
                 <p className="solucoes__modal__cardHeader-paragraph">
                   Essa solução é perfeita para empresas que possuem um grande
@@ -569,7 +582,7 @@ const solucoes = () => {
                   equipe!
                 </p>
               </div>
-              <div className="col-6">
+              <div className="solucoes__modal__desktop col-6">
                 <div className="solucoes__modal__cobrancaModal"></div>
               </div>
             </div>
@@ -584,6 +597,7 @@ const solucoes = () => {
         <Modal
           isOpen={modalConciliacao}
           style={customStyles}
+          className="modalGerencial"
           onRequestClose={() => {
             setModalConciliacao(false);
           }}
@@ -597,6 +611,12 @@ const solucoes = () => {
                     Conciliação bancária
                   </h2>
                 </div>
+                <div className="solucoes__modal__mobile">
+                  <div className="col-6">
+                    <div className="solucoes__modal__conciliacaoModal"></div>
+                  </div>
+                </div>
+
                 <p className="solucoes__modal__cardHeader-paragraph">
                   Solução feita para empresas que trabalham com várias contas
                   correntes. Importe lançamentos do seu extrato automaticamente
@@ -613,7 +633,7 @@ const solucoes = () => {
                   das contas bancárias em dia!
                 </p>
               </div>
-              <div className="col-6">
+              <div className="solucoes__modal__desktop col-6">
                 <div className="solucoes__modal__conciliacaoModal"></div>
               </div>
             </div>

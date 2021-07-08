@@ -766,6 +766,11 @@
     align-items: left;
     justify-content: left;
 
+    @include respond(phone) {
+      align-items: center;
+      justify-content: center;
+    }
+
     &-column {
       display: block;
     }
@@ -783,6 +788,8 @@
       letter-spacing: 0px;
       color: #0157a5 !important;
       @include respond(phone) {
+        font-size: 2.8rem;
+        line-height: 3.2rem;
         margin-top: 0rem;
         width: 220px;
       }
@@ -797,10 +804,9 @@
       letter-spacing: 0px;
       color: #5467ae;
       @include respond(phone) {
-
         max-width: 320px;
         margin: 0 auto;
-        margin-top:3rem;
+        margin-top: 3rem;
       }
     }
     &__construcao {
@@ -825,6 +831,10 @@
         font-weight: bold;
         letter-spacing: 0px;
         color: #0157a5 !important;
+        @include respond(phone) {
+          font-size: 2.2rem;
+          line-height: 2.8rem;
+        }
       }
       &-paragraph {
         max-width: 972px;
@@ -835,6 +845,8 @@
         font-weight: normal;
         letter-spacing: 0px;
         color: #5467ae;
+        @include respond(phone) {
+        }
       }
     }
   }
@@ -847,12 +859,12 @@
     background-position: top right;
 
     @include respond(phone) {
-      width: 370px;
-      height: 296px;
+      width: 330px;
+      height: 216px;
       background-size: 100% 100%;
       background-repeat: no-repeat;
       background-position: center;
-
+      margin-top: 2rem;
     }
   }
   &__automatizacaoModal {
@@ -864,6 +876,16 @@
     background-size: 89% 89%;
     background-repeat: no-repeat;
     background-position: top right;
+    @include respond(phone) {
+      width: 330px;
+      height: 216px;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-top: 2rem;
+      margin-right: 0rem;
+      margin-left: 0rem;
+    }
   }
   &__gerencialModal {
     margin-right: -6rem;
@@ -875,6 +897,15 @@
     background-size: 92% 100%;
     background-repeat: no-repeat;
     background-position: top left;
+    @include respond(phone) {
+      width: 330px;
+      height: 216px;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: left;
+      margin-top: 2rem;
+      margin-left: -1rem;
+    }
   }
   &__construcaoModal {
     margin-top: 2.8rem;
@@ -895,6 +926,16 @@
     background-size: 89% 89%;
     background-repeat: no-repeat;
     background-position: top right;
+    @include respond(phone) {
+      width: 330px;
+      height: 216px;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-top: 2rem;
+      margin-right: 0rem;
+      margin-left: 0rem;
+    }
   }
   &__conciliacaoModal {
     margin-right: -6rem;
@@ -905,6 +946,16 @@
     background-size: 89% 89%;
     background-repeat: no-repeat;
     background-position: top right;
+    @include respond(phone) {
+      width: 330px;
+      height: 216px;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-top: 2rem;
+      margin-right: 0rem;
+      margin-left: 0rem;
+    }
   }
   &__closeModal {
     position: absolute;
@@ -937,8 +988,8 @@ ul.solucoes__modal__ul {
   padding-left: 0rem;
   @include respond(phone) {
     max-width: 320px;
-    margin:0 auto;
-    margin-top:2rem;
+    margin: 0 auto;
+    margin-top: 2rem;
   }
 }
 .modalOrcamento {
@@ -957,8 +1008,8 @@ ul.solucoes__modal__ul {
   padding: 60px 60px 60px 60px;
 
   @include respond(phone) {
+    max-width: 380px;
     padding: 20px 20px 20px 20px;
-
   }
 }
 .modalConstrucao {
@@ -978,6 +1029,10 @@ ul.solucoes__modal__ul {
   transform: translate(-50%, -50%);
   border-radius: 10px;
   padding: 60px 60px 60px 60px;
+  @include respond(phone) {
+    max-width: 380px;
+    padding: 20px 20px 20px 20px;
+  }
 }
 .modalGerencial {
   backface-visibility: hidden;
@@ -986,7 +1041,8 @@ ul.solucoes__modal__ul {
   top: 50%;
   overflow-y: auto;
   max-width: 1240px;
-  overflow-x: hidden;
+  max-height: 85vh; // <-- This sets the height
+  overflow-y: scroll;
   left: 50%;
   right: auto;
   bottom: auto;
@@ -994,9 +1050,26 @@ ul.solucoes__modal__ul {
   transform: translate(-50%, -50%);
   border-radius: 10px;
   padding: 60px 60px 60px 60px;
+
+  @include respond(phone) {
+    max-width: 380px;
+    padding: 20px 20px 20px 20px;
+  }
 }
 
 .ReactModal__Overlay {
   padding-left: 0px;
   padding-right: 0px;
+}
+
+@include respond(phone) {
+  .col-6 {
+    width: 100% !important;
+  }
+  .col-5 {
+    width: 100% !important;
+  }
+  .col-7 {
+    width: 100% !important;
+  }
 }
