@@ -58,9 +58,11 @@ const solucoes = () => {
       <div className="sol-page">
         <div className="sol-page__bg">
           <div className="container">
-            <h1 className="sol-page__header">
-              Inovação tecnológica em cada projeto
-            </h1>
+            <div className="sol-page__content">
+              <h1 className="sol-page__header">
+                Inovação tecnológica em cada projeto
+              </h1>
+            </div>
           </div>
           <div className="sol-page__content">
             <p className="sol-page__paragraph">
@@ -88,48 +90,44 @@ const solucoes = () => {
             <div className="row">
               <div className="col-6">
                 <h2 className="sol-page__mercados__header">Mercados</h2>
-                <p className="sol-page__mercados__paragraph">
-                  Estes são os mercados onde já promovemos a{' '}
-                  <b>inovação tecnológica </b>com as nossas soluções:
-                </p>
-                <div className="sol-page__mercados__columns">
-                  <ul className="space">
-                    <li className="circle">Construção Civil</li>
-                    <li className="circle">Bancário</li>
-                    <li className="circle">Automotivo</li>
-                  </ul>
-
-                  <ul>
-                    <li className="circle">Ramo de Alimentos</li>
-                    <li className="circle">Administração de shopping</li>
-                    <li className="circle">Gestão de Estacionamento</li>
-                  </ul>
+                <div className="sol-page__mercados__card__todo-1">
+                  <div className="sol-page__mercados__alignCenter">
+                    <div className="sol-page__mercados__bg"></div>
+                  </div>
                 </div>
-                <p className="sol-page__mercados__paragraph">
-                  A sua empresa é de outro nicho? Sem problemas. Nossas soluções
-                  são personalizáveis para se ajustar às suas demandas!
-                </p>
-                <div className="sol-page__mercados__button">
-                  <a href="/solucoes" href="#versolucoes">
-                    ver soluções
-                  </a>
+                <div className="sol-page__mercados__alignCenter">
+                  <p className="sol-page__mercados__paragraph">
+                    Estes são os mercados onde já promovemos a{' '}
+                    <b>inovação tecnológica </b>com as nossas soluções:
+                  </p>
+                  <div className="sol-page__mercados__columns">
+                    <ul className="space">
+                      <li className="circle">Construção Civil</li>
+                      <li className="circle">Bancário</li>
+                      <li className="circle">Automotivo</li>
+                    </ul>
+
+                    <ul>
+                      <li className="circle">Ramo de Alimentos</li>
+                      <li className="circle">Administração de shopping</li>
+                      <li className="circle">Gestão de Estacionamento</li>
+                    </ul>
+                  </div>
+                  <p className="sol-page__mercados__paragraph">
+                    A sua empresa é de outro nicho? Sem problemas. Nossas
+                    soluções são personalizáveis para se ajustar às suas
+                    demandas!
+                  </p>
+                  <div className="sol-page__mercados__button">
+                    <a href="/solucoes" href="#versolucoes">
+                      ver soluções
+                    </a>
+                  </div>
                 </div>
               </div>
-              <div className="sol-page__mercados__card col-6">
-                <div className="sol-page__mercados__bg">
-                  <div className="sol-page__mercados__card-1">
-                    <div className="sol-page__mercados__card-1-almoco"></div>
-                  </div>
-                  <div className="sol-page__mercados__card-2">
-                    <div className="sol-page__mercados__card-2-construcao"></div>
-                  </div>
-                  <div className="sol-page__mercados__card-3">
-                    <div className="sol-page__mercados__card-3-carro"></div>
-                  </div>
-                  <div className="sol-page__mercados__card-4">
-                    <div className="sol-page__mercados__card-4-banco"></div>
-                  </div>
-                </div>
+
+              <div className="sol-page__mercados__card col-6 sol-page__mercados__card__todo-2">
+                <div className="sol-page__mercados__bg"></div>
               </div>
             </div>
           </div>
@@ -318,7 +316,6 @@ const solucoes = () => {
                 Queremos desenvolver a solução que sua empresa precisa.
               </p>
               <div className="dobra-2__aligncenter">
-
                 <div className="dobra-cta-solucoes__button">
                   <Link href="/contato">entrar em contato</Link>
                 </div>

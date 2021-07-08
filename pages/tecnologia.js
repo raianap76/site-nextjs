@@ -50,7 +50,7 @@ const tecnologia = () => {
                 utilizamos em nosso trabalho:
               </p>
             </div>
-            <div className="tec-page__dobra-3__painel">
+            <div className="tec-page__dobra-3__painel tec-page__dobra-3__painel-tec">
               <div className="tec-page__dobra-3__painel-card">
                 <div className="tec-page__dobra-3__painel-logoPython"></div>
                 <p>Python</p>

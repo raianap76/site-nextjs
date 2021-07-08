@@ -69,7 +69,7 @@ const about = () => {
         <div className="about-page__dobra-1">
           <div className="container">
             <div className="row">
-              <div className="about-page__dobra-1__col-1 col-6">
+              <div className="about-page__dobra-1__col-1 col-6 col-12-m">
                 <h2>Pilares</h2>
                 <p>
                   Estamos focados em soluções de gerenciamento de indicadores e
@@ -81,7 +81,7 @@ const about = () => {
                   melhorias significativas para os nossos clientes.
                 </p>
               </div>
-              <div className="about-page__dobra-1__col-2 col-6">
+              <div className="about-page__dobra-1__col-2 col-6 col-12-m">
                 <div className="about-page__dobra-1__col-2-buttons">
                   <button
                     className={actived1}
@@ -109,6 +109,51 @@ const about = () => {
                   <p className="about-page__dobra-1__col-2-paragraph">
                     {content}
                   </p>
+                </div>
+              </div>
+              {/* mobile */}
+              <div className="about-page__dobra-1__col-2-m">
+                <div className="col-6 col-12-m">
+                  <div className="about-page__dobra-1__col-2-m-cards">
+                    <div className="about-page__dobra-1__col-2-m-card">
+                      <h2 className="about-page__dobra-1__col-2-m-header">
+                        Diversidade
+                      </h2>
+                      <div className="about-page__dobra-1__col-2-m">
+                        <p className="about-page__dobra-1__col-2-m-paragraph">
+                          Nosso time é diverso, respeitamos e aceitamos as
+                          diferenças de cada um. Temos profissionais com
+                          formações distintas e habilidades distintas e
+                          acreditamos que é essa característica que nos fará
+                          chegar mais longe.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="about-page__dobra-1__col-2-m-card">
+                      <h2 className="about-page__dobra-1__col-2-m-header">
+                        Conhecimento
+                      </h2>
+                      <div className="about-page__dobra-1__col-2-m">
+                        <p className="about-page__dobra-1__col-2-m-paragraph">
+                          Nossos colaboradores possuem capacitação profissional
+                          para atuar com o que há de mais novo e avançado no
+                          mercado de TI.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="about-page__dobra-1__col-2-m-card">
+                      <h2 className="about-page__dobra-1__col-2-m-header">
+                        Criatividade
+                      </h2>
+                      <div className="about-page__dobra-1__col-2-m">
+                        <p className="about-page__dobra-1__col-2-m-paragraph">
+                          Somos um time criativo, usando as melhorias
+                          tecnologias do mercado, prpopando as melhores
+                          soluções, com qualidade e otimização.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -160,7 +205,9 @@ const about = () => {
                   mande seu currículo
                 </button> */}
                 <div className="dobra-trabalhe__button">
-                  <Link href="/contato/#PreencherForm">mande seu currículo</Link>
+                  <Link href="/contato/#PreencherForm">
+                    mande seu currículo
+                  </Link>
                 </div>
               </div>
             </div>

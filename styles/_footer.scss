@@ -16,22 +16,23 @@
     flex-direction: row;
 
     @include respond(phone) {
-      justify-content:center;
-      align-items:center;
+      justify-content: center;
+      align-items: center;
       flex-direction: column;
     }
   }
 
   &__col-1 {
-
     // display: flex;
     // flex-direction: column;
     // justify-content: left;
     // align-items: left;
-    margin-right: 2rem;
+    margin-right: 4rem;
 
     @include respond(phone) {
       width: 320px;
+      margin-right: 0rem;
+
       // justify-content: center;
       // align-items: center;
     }
@@ -43,7 +44,6 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
-
     }
 
     &__box {
@@ -102,16 +102,16 @@
     // flex-direction: column;
     // justify-content: left;
     // align-items: left;
-    margin-right: 2rem;
+    margin-right: 4rem;
 
     @include respond(phone) {
+      margin-right: 0rem;
       padding-top: 0rem;
       width: 320px;
 
       // justify-content: center;
       // align-items: center;
     }
-
 
     &__menu {
       display: flex;
@@ -131,7 +131,7 @@
       @include respond(phone) {
         text-align: left;
         margin-top: 2rem;
-        width:350px;
+        width: 350px;
       }
     }
     &__input-group {
@@ -193,11 +193,10 @@
     }
 
     ul {
-      margin:0 auto;
+      margin: 0 auto;
       padding: 0px;
       margin: 0px;
       list-style: none;
-
     }
 
     ul li {
@@ -215,8 +214,8 @@
       color: #ffffff;
       text-decoration: none;
       @include respond(phone) {
-        &:first-child{
-          padding-left:0px;
+        &:first-child {
+          padding-left: 0px;
         }
       }
     }
@@ -231,7 +230,6 @@
       // justify-content: center;
       // align-items: center;
       width: 320px;
-
     }
 
     p {

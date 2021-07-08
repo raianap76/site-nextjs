@@ -7,15 +7,31 @@
     background-image: url('../assets/bg-tec.png');
     background-size: cover;
     background-position: center;
-    position: relative;
+
+    @include respond(phone) {
+      width: 100%;
+      height: 618px;
+      background-image: url('../assets/tecnologia-mobile/hero-tecnologia.png');
+      background-size: cover;
+      background-position: center;
+    }
   }
   &__content {
     width: 798px;
     margin: 0 auto;
+
+    @include respond(phone) {
+      width: 320px;
+    }
   }
   &__content-2 {
     width: 620px;
     margin: 0 auto;
+
+    @include respond(phone) {
+      width: 320px;
+      margin: 0 auto;
+    }
   }
   &__header {
     width: 798px;
@@ -26,6 +42,13 @@
     font-weight: bold;
     font-style: normal;
     letter-spacing: 0px;
+    @include respond(phone) {
+      width: 320px;
+      font-size: 3.8rem;
+      line-height: 4.2rem;
+      text-align: left;
+      padding-top: 8rem;
+    }
   }
   &__paragraph {
     width: 620px;
@@ -36,6 +59,12 @@
     font-weight: normal;
     font-style: normal;
     letter-spacing: 0px;
+    @include respond(phone) {
+      width: 320px;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      text-align: left;
+    }
   }
   &__button {
     margin-top: 4rem;
@@ -66,7 +95,10 @@
   &__dobra-3 {
     padding-top: 12rem;
     padding-bottom: 12rem;
-
+    @include respond(phone) {
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+    }
 
     font-family: 'IBM Plex Sans';
     background: #f7f7f7 0% 0% no-repeat padding-box;
@@ -79,6 +111,10 @@
       font-weight: bold;
       font-style: normal;
       margin-bottom: 1.5rem;
+      @include respond(phone) {
+        font-size: 2.8rem;
+        line-height: 3.6rem;
+      }
     }
     &__paragraph {
       width: 791px;
@@ -91,6 +127,9 @@
       font-weight: normal;
       font-style: normal;
       margin-bottom: 7rem;
+      @include respond(phone) {
+        width: 320px;
+      }
     }
 
     &__painel {
@@ -100,7 +139,7 @@
       margin: 0 auto;
       @include respond(phone) {
         width: 360px;
-        height: 860px;
+        // height: 860px;
       }
 
       &-card {
@@ -235,6 +274,11 @@
         background-image: url('../assets/mysql.png');
         background-size: cover;
         background-position: center;
+        @include respond(phone) {
+          width: 76px;
+          height: 76px;
+          background-image: url('../assets/tecnologias-mobile/mysql.png');
+        }
       }
       &-logoPostgres {
         width: 150px;
@@ -242,6 +286,11 @@
         background-image: url('../assets/postgres.png');
         background-size: cover;
         background-position: center;
+        @include respond(phone) {
+          width: 76px;
+          height: 76px;
+          background-image: url('../assets/tecnologias-mobile/postgresql.png');
+        }
       }
       &-logoAzure {
         width: 150px;
@@ -261,12 +310,20 @@
         background-image: url('../assets/digital-ocean.png');
         background-size: cover;
         background-position: center;
+        @include respond(phone) {
+          width: 76px;
+          height: 76px;
+          background-image: url('../assets/tecnologias-mobile/DigitalOcean.png');
+        }
       }
     }
   }
   &__content-cta {
     padding-top: 12rem;
-    width: 829px;
+    max-width: 829px;
     margin: 0 auto;
+    @include respond(phone) {
+      width:320px;
+    }
   }
 }
