@@ -10,6 +10,9 @@ const Nav = () => {
       }
     });
 
+
+
+
     checkbox.addEventListener('change', (e) => {
       if (e.target.checked) {
         console.log(e.target.checked);
