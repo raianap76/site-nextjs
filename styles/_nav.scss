@@ -109,7 +109,7 @@
     }
   }
   .navbar > .navbar-btn {
-    margin-top:5px;
+    margin-top: 5px;
     margin-right: 10px;
     display: inline-block;
     position: absolute;
@@ -154,13 +154,41 @@
     display: block;
     width: 100%;
     color: #fff;
+    &:hover {
+      background-color: transparent;
+    }
+    &:focus {
+      transition-duration: 0.5s;
+      background-color: #4ebbc5;
+      transition-duration: 0.5s;
+
+      .navbar > .navbar-links {
+
+        display: none;
+      }
+    }
   }
   .navbar > #navbar-check:not(:checked) ~ .navbar-links {
+
     height: 0px;
   }
   .navbar > #navbar-check:checked ~ .navbar-links {
+
     height: calc(100vh - 50px);
     overflow-y: auto;
+
+    a{
+      // color:green!important;
+
+      &:visited{
+        .navbar > .navbar-links{
+          height: 0px !important;
+
+        }
+
+      }
+    }
+
   }
 }
 
@@ -170,4 +198,8 @@
   background: transparent url('../assets/logo-vp6.svg') 0% 0% no-repeat
     padding-box;
   opacity: 1;
+}
+
+.none-nav{
+  display: none!important;
 }
