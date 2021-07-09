@@ -2,34 +2,21 @@ import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 const Nav = () => {
   useEffect(() => {
+    var checkbox = document.getElementById('navbar-check');
     document.getElementById('testee').addEventListener('click', function () {
-      if (window.matchMedia("(max-width: 800px)").matches) {
+      if (window.matchMedia('(max-width: 800px)').matches) {
         document.getElementById('testee').classList.add('none-nav');
-        console.log("deuuu")
-        /* a viewport tem pelo menos 400 pixels de largura */
+        checkbox.checked = false;
       }
-     // document.getElementById('Painel-1').classList.add('none');
     });
-    const checkbox = document.getElementById('navbar-check');
-    checkbox.addEventListener('change', e => {
-      console.log("mudou")
-      document.getElementById('testee').classList.remove('none-nav');
 
-      if(e.target.checked){
-        console.log(e.target.checked)
-        if (window.matchMedia("(max-width: 800px)").matches) {
+    checkbox.addEventListener('change', (e) => {
+      if (e.target.checked) {
+        console.log(e.target.checked);
+        if (window.matchMedia('(max-width: 800px)').matches) {
           document.getElementById('testee').classList.remove('none-nav');
-          console.log("deuuu")
-          /* a viewport tem pelo menos 400 pixels de largura */
         }
-      }else{
-
       }
-
-  });
-    document.getElementById('navbar-check').addEventListener('change', function () {
-
-     // document.getElementById('Painel-1').classList.add('none');
     });
   }, []);
 
@@ -52,9 +39,7 @@ const Nav = () => {
           </div>
 
           <div className="navbar-links" id="testee">
-            <Link  href="/">
-              Home
-            </Link>
+            <Link href="/">Home</Link>
 
             <Link href="/sobre">Sobre</Link>
             <Link href="/tecnologia">Tecnologia</Link>
