@@ -448,9 +448,9 @@ const solucoes = () => {
                   </h2>
                 </div>
                 <div className="solucoes__modal__mobile">
-                  <div className="col-6">
+
                     <div className="solucoes__modal__gerencialModal"></div>
-                  </div>
+
                 </div>
                 <p className="solucoes__modal__cardHeader-paragraph">
                   Ferramenta para investir em Business Intelligence e melhorar o
@@ -476,7 +476,7 @@ const solucoes = () => {
                   efetiva dos seus dados e torne suas decisões mais assertivas!
                 </p>
               </div>
-              <div className="solucoes__modal__desktop col-6">
+              <div className="solucoes__modal__desktop col-5">
                 <div className="solucoes__modal__gerencialModal"></div>
               </div>
             </div>
