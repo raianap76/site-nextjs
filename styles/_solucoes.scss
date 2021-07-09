@@ -141,6 +141,7 @@
         text-align: center;
         font-size: 2.8rem;
         line-height: 3.6rem;
+
       }
     }
     &__paragraph {
@@ -154,7 +155,7 @@
       letter-spacing: 0px;
       @include respond(phone) {
         width: 320px;
-        margin-top: 0rem;
+        margin-bottom: 3rem;
       }
     }
     &__button {
@@ -185,11 +186,22 @@
       }
     }
     &__alignCenter {
+
       display: flex;
+      flex-direction: column;
+      justify-content: left;
+      align-self: left;
+      align-items: left;
+
+      @include respond(phone) {
+        display: flex;
       flex-direction: column;
       justify-content: center;
       align-self: center;
       align-items: center;
+
+      }
+
     }
 
     &__card {
