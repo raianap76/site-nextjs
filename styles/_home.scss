@@ -551,8 +551,10 @@
       color: #0157a5;
       margin-bottom: 8rem;
       @include respond(phone) {
+        max-width: 320px;
         margin-bottom: 1rem;
         text-align: center;
+        margin: 0 auto;
       }
     }
   }
