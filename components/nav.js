@@ -1,11 +1,11 @@
 import Link from 'next/link';
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 const Nav = () => {
   useEffect(() => {
     var checkbox = document.getElementById('navbar-check');
-    document.getElementById('testee').addEventListener('click', function () {
+    document.getElementById('remove-nav').addEventListener('click', function () {
       if (window.matchMedia('(max-width: 800px)').matches) {
-        document.getElementById('testee').classList.add('none-nav');
+        document.getElementById('remove-nav').classList.add('none-nav');
         checkbox.checked = false;
       }
     });
@@ -14,7 +14,7 @@ const Nav = () => {
       if (e.target.checked) {
         console.log(e.target.checked);
         if (window.matchMedia('(max-width: 800px)').matches) {
-          document.getElementById('testee').classList.remove('none-nav');
+          document.getElementById('remove-nav').classList.remove('none-nav');
         }
       }
     });
@@ -38,7 +38,7 @@ const Nav = () => {
             </label>
           </div>
 
-          <div className="navbar-links" id="testee">
+          <div className="navbar-links" id="remove-nav">
             <Link href="/">Home</Link>
 
             <Link href="/sobre">Sobre</Link>
