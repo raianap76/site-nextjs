@@ -10,21 +10,21 @@ export default function Home() {
   const [modalGestao, setModalGestao] = useState(false);
   const [modalConciliacao, setModalConciliacao] = useState(false);
 
-  useEffect(() => {
-    const id = setInterval(() => {
-      document.getElementById('Painel-1').classList.add('none');
-      document.getElementById('Painel-2').classList.remove('none');
-    }, 4000);
+  // useEffect(() => {
+  //   const id = setInterval(() => {
+  //     document.getElementById('Painel-1').classList.add('none');
+  //     document.getElementById('Painel-2').classList.remove('none');
+  //   }, 4000);
 
-    const id2 = setInterval(() => {
-      document.getElementById('Painel-2').classList.add('none');
-      document.getElementById('Painel-1').classList.remove('none');
-    }, 7000);
-    return () => {
-      clearInterval(id);
-      clearInterval(id2);
-    };
-  }, []);
+  //   const id2 = setInterval(() => {
+  //     document.getElementById('Painel-2').classList.add('none');
+  //     document.getElementById('Painel-1').classList.remove('none');
+  //   }, 7000);
+  //   return () => {
+  //     clearInterval(id);
+  //     clearInterval(id2);
+  //   };
+  // }, []);
 
   const customStyles = {
     content: {
@@ -319,7 +319,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div id="Painel-1" className="dobra-5__painel col-6 col-12-m none">
+          <div id="Painel-1" className="dobra-5__painel col-6 col-12-m">
             <div className="dobra-5__painel-bild "></div>
             <div className="dobra-5__painel-cury"></div>
             <div className="dobra-5__painel-eztec"></div>
@@ -340,7 +340,7 @@ export default function Home() {
 
           <div
             id="Painel-2"
-            className="dobra-5__painel dobra-5__painel-2 col-6 col-12-m"
+            className="dobra-5__painel dobra-5__painel-2 col-6 col-12-m none"
           >
             <div className="dobra-5__painel-AppPonto"></div>
             <div className="dobra-5__painel-Inter"></div>

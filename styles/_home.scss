@@ -560,7 +560,7 @@
   }
   &__painel {
     width: 823px;
-    height: 429px;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 100px 100px;
@@ -611,8 +611,7 @@
 
     @include respond(phone) {
       grid-template-columns: repeat(2, 1fr);
-      width: 360px;
-      height: 860px;
+      height: auto;
     }
 
     &-AppPonto {

@@ -11,30 +11,26 @@
   opacity: 1;
 
   &__alignItemns {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+    margin: 0 auto;
 
     @include respond(phone) {
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 
   &__col-1 {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: left;
-    // align-items: left;
-    margin-right: 4rem;
-
     @include respond(phone) {
       width: 320px;
       margin-right: 0rem;
-
-      // justify-content: center;
-      // align-items: center;
+      justify-self: center;
+    }
+    @media screen and (max-width: 375px) {
+      justify-self: left;
     }
 
     &__logo {
@@ -98,19 +94,13 @@
   }
   &__col-2 {
     padding-top: 2rem;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: left;
-    // align-items: left;
-    margin-right: 4rem;
+    justify-self: center;
 
     @include respond(phone) {
-      margin-right: 0rem;
-      padding-top: 0rem;
-      width: 320px;
-
-      // justify-content: center;
-      // align-items: center;
+      justify-self: center;
+    }
+    @media screen and (max-width: 375px) {
+      justify-self: left;
     }
 
     &__menu {
@@ -148,8 +138,12 @@
       border-radius: 5px;
       background-repeat: no-repeat;
       outline: 0;
-      width: 175px;
+      width: 225px;
       height: 49px;
+      @include respond(phone) {
+        width: 175px;
+        height: 49px;
+      }
     }
     &__box {
       max-width: 467px;
@@ -225,11 +219,11 @@
 
     @include respond(phone) {
       padding-top: 4rem;
-      // display: flex;
-      // flex-direction: column;
-      // justify-content: center;
-      // align-items: center;
       width: 320px;
+      justify-self: center;
+    }
+    @media screen and (max-width: 375px) {
+      justify-self: left;
     }
 
     p {
