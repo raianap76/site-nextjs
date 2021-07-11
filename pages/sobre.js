@@ -1,8 +1,24 @@
 import Meta from '../components/meta';
-import React, { useState } from 'react';
+import React, { useState , useEffect } from 'react';
 import Link from 'next/link';
 
 const about = () => {
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      document.getElementById('Painel-1').classList.add('none');
+      document.getElementById('Painel-2').classList.remove('none');
+    }, 4000);
+
+    const id2 = setInterval(() => {
+      document.getElementById('Painel-2').classList.add('none');
+      document.getElementById('Painel-1').classList.remove('none');
+    }, 7000);
+    return () => {
+      clearInterval(id);
+      clearInterval(id2);
+    };
+  }, []);
   const [content, setContent] = useState(
     'Nosso time é diverso, respeitamos e aceitamos as diferenças de cada um. Temos profissionais com formações distintas e habilidades distintas e acreditamos que é essa característica que nos fará chegar mais longe.'
   );
@@ -172,7 +188,29 @@ const about = () => {
             </p>
           </div>
 
-          <div className="dobra-5__painel col-6 col-12-m">
+          <div id="Painel-1" className="dobra-5__painel col-6 col-12-m none">
+            <div className="dobra-5__painel-bild "></div>
+            <div className="dobra-5__painel-cury"></div>
+            <div className="dobra-5__painel-eztec"></div>
+            <div className="dobra-5__painel-inter-construtora"></div>
+            <div className="dobra-5__painel-minasMaquinas"></div>
+            <div className="dobra-5__painel-novoLar"></div>
+            <div className="dobra-5__painel-souzaRocha"></div>
+            <div className="dobra-5__painel-tenco"></div>
+            <div className="dobra-5__painel-Tiscoski"></div>
+            <div className="dobra-5__painel-viaSul"></div>
+            <div className="dobra-5__painel-viewCo"></div>
+            <div className="dobra-5__painel-Mrv"></div>
+            <div className="dobra-5__painel-Inter"></div>
+            <div className="dobra-5__painel-Patrimar"></div>
+            <div className="dobra-5__painel-Direional"></div>
+            <div className="dobra-5__painel-Precon"></div>
+          </div>
+
+          <div
+            id="Painel-2"
+            className="dobra-5__painel dobra-5__painel-2 col-6 col-12-m"
+          >
             <div className="dobra-5__painel-AppPonto"></div>
             <div className="dobra-5__painel-Inter"></div>
             <div className="dobra-5__painel-Carapreta"></div>
