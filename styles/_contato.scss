@@ -401,6 +401,7 @@
     border-style: none;
     @include respond(phone) {
       width: 320px;
+      height: 180px;
     }
   }
   form#formset blockquote {
